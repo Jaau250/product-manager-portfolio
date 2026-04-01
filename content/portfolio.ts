@@ -131,13 +131,22 @@ export const caseStudies: CaseStudy[] = [
     eyebrow: "Flagship Case Study",
     title: "Online Leasing Engine",
     summary:
-      "A 0→1 leasing funnel that connected applications, identity checks, payments, and e-signature into one API-first product experience.",
+      "Led the 0→1 build of an end-to-end leasing platform, integrating identity verification, credit checks, banking data, employer verification, payments, and e-signature into a single API-driven workflow. Designed and scaled leasing operations across thousands of units while enabling faster, fully digital application-to-lease conversion.",
     overview:
       "The Online Leasing Engine was built as a flagship digital leasing experience that unified application intake, verification, payment, signing, and operational visibility into one product flow.",
     company: "Property Vista",
     period: "2022 - Present",
     liveUrl: "https://www.vidabypropertyvista.com/ai-leasing-engine",
-    tags: ["0→1 delivery", "API-first", "AWS", "Leasing operations"],
+    tags: [
+      "0→1 delivery",
+      "API-first",
+      "AWS",
+      "Leasing operations",
+      "Payments",
+      "Identity & Verification",
+      "Integrations",
+      "Workflow automation"
+    ],
     users: [
       "Prospective renters completing applications online",
       "Leasing teams managing lead-to-lease conversion",
@@ -170,7 +179,7 @@ export const caseStudies: CaseStudy[] = [
       },
       {
         value: "1,000+",
-        label: "applications processed monthly",
+        label: "monthly applications processed",
         detail: "Built for sustained leasing volume rather than one-off launches."
       },
       {
@@ -208,13 +217,21 @@ export const caseStudies: CaseStudy[] = [
     eyebrow: "Data Platform Case Study",
     title: "Vista Analytics",
     summary:
-      "A self-serve analytics capability that turned scattered leasing and operations data into tenant-aware dashboards, reusable pipelines, and decision-ready reporting.",
+      "Led the development of a centralized analytics platform serving internal teams, GTM functions, and customers through role-based access. Built data pipelines and dashboards that transformed leasing, operations, and AI assistant data into decision-ready insights. Instrumented AI leasing assistant and nurturing data to support performance tracking and drive customer renewal conversations.",
     overview:
       "Vista Analytics reframed reporting as a product capability by turning fragmented operational data into reusable pipelines, dashboards, and customer-facing analytics surfaces.",
     company: "Property Vista",
     period: "2023 - Present",
     liveUrl: "https://www.vidabypropertyvista.com/vida-analytics",
-    tags: ["Analytics", "AWS Glue", "Dashboards", "Platform thinking"],
+    tags: [
+      "Analytics",
+      "AWS Glue",
+      "Dashboards",
+      "Data pipelines",
+      "RBAC / Access control",
+      "Customer analytics",
+      "AI data instrumentation"
+    ],
     users: [
       "Executives and operators preparing QBRs and monitoring KPIs",
       "Customer teams that needed self-serve portfolio visibility",
@@ -290,13 +307,21 @@ export const caseStudies: CaseStudy[] = [
     eyebrow: "Financial Services Case Study",
     title: "Mortgage / Lending Platform",
     summary:
-      "A retention-focused renewal platform that used customer data, scoring, and targeted outreach to protect mortgage balances and improve renewal outcomes.",
+      "Led product initiatives for a mortgage retention platform, leveraging customer data, scoring models, and targeted outreach to identify at-risk accounts and improve renewal outcomes. Enabled earlier intervention and more effective retention strategies across the lending portfolio.",
     overview:
       "This case study centers on a renewal and retention workflow designed to identify at-risk customers early, support tailored outreach, and improve renewal outcomes in a regulated environment.",
     company: "TD Canada Trust",
     period: "2019 - 2021",
     liveUrl: "https://www.td.com/ca/en/personal-banking/products/mortgages/mortgage-offers",
-    tags: ["Fintech", "Customer data", "Renewals", "Retention strategy"],
+    tags: [
+      "Fintech",
+      "Customer data",
+      "Renewals",
+      "Retention strategy",
+      "Scoring models",
+      "Customer segmentation",
+      "Retention analytics"
+    ],
     users: [
       "Mortgage customers approaching renewal windows",
       "Advisers and internal teams prioritizing outreach and offer strategy",
