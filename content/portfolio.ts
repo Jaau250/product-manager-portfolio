@@ -131,7 +131,7 @@ export const caseStudies: CaseStudy[] = [
     eyebrow: "Flagship Case Study",
     title: "Online Leasing Engine",
     summary:
-      "Led the 0→1 build of an end-to-end leasing platform, integrating identity verification, credit checks, banking data, employer verification, payments, and e-signature into a single API-driven workflow. Designed and scaled leasing operations across thousands of units while enabling faster, fully digital application-to-lease conversion.",
+      "Led the 0→1 build of an end-to-end leasing platform, orchestrating multiple integrations across identity verification, credit checks, banking data, payments, and e-signature into a unified product experience. Designed and scaled leasing workflows across thousands of units, enabling faster, fully digital application-to-lease conversion.",
     overview:
       "The Online Leasing Engine was built as a flagship digital leasing experience that unified application intake, verification, payment, signing, and operational visibility into one product flow.",
     company: "Property Vista",
