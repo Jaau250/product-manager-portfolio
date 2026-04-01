@@ -37,21 +37,23 @@ export function CaseStudyCard({ study }: CaseStudyCardProps) {
         ))}
       </div>
 
-      <div className="mt-8 grid gap-3 sm:grid-cols-3">
+      <div className="mt-8 grid auto-rows-fr gap-3 sm:grid-cols-3">
         {study.measurableOutcomes.map((outcome) => (
           <div
             key={`${study.slug}-${outcome.value}-${outcome.label}`}
-            className="rounded-2xl border border-white/10 bg-ink/60 p-4"
+            className="flex h-full flex-col overflow-hidden rounded-2xl border border-white/10 bg-ink/60 p-5"
           >
-            <p className="text-xl font-semibold text-white">{outcome.value}</p>
-            <p className="mt-1 text-xs uppercase tracking-[0.18em] text-mist">
+            <p className="text-lg font-semibold leading-tight text-white sm:text-xl">
+              {outcome.value}
+            </p>
+            <p className="mt-2 overflow-hidden break-normal text-sm leading-[1.35] text-mist">
               {outcome.label}
             </p>
           </div>
         ))}
       </div>
 
-      <div className="mt-8 flex items-center justify-between gap-4">
+      <div className="mt-auto flex items-center justify-between gap-4 pt-8">
         <Link
           href={`/case-studies/${study.slug}`}
           className="inline-flex items-center gap-2 text-sm font-semibold text-white transition group-hover:text-accent"

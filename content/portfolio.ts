@@ -174,17 +174,17 @@ export const caseStudies: CaseStudy[] = [
     measurableOutcomes: [
       {
         value: "85%",
-        label: "reduction in time-to-lease",
+        label: "Reduction in time to lease",
         detail: "Shifted key steps from manual coordination to a guided digital journey."
       },
       {
         value: "1,000+",
-        label: "monthly applications processed",
+        label: "Monthly applications processed",
         detail: "Built for sustained leasing volume rather than one-off launches."
       },
       {
         value: "5,000+",
-        label: "units supported",
+        label: "Units supported",
         detail: "Product decisions were informed by portfolio-scale operational needs."
       }
     ],
@@ -263,13 +263,13 @@ export const caseStudies: CaseStudy[] = [
         detail: "Dashboards replaced manual report assembly and spreadsheet stitching."
       },
       {
-        value: "Self-serve",
-        label: "customer analytics access",
+        value: "Self-serve analytics access",
+        label: "Customer analytics access",
         detail: "Stakeholders could answer core questions without waiting on custom extracts."
       },
       {
-        value: "Always-on",
-        label: "operational KPI visibility",
+        value: "Real-time operational visibility",
+        label: "Operational KPI visibility",
         detail: "Leasing, funnel, and portfolio trends became visible in near real time."
       }
     ],
@@ -349,17 +349,17 @@ export const caseStudies: CaseStudy[] = [
     measurableOutcomes: [
       {
         value: ">$2B",
-        label: "mortgage balances retained",
+        label: "Mortgage balances retained",
         detail: "Retention strategy centered on proactive targeting and timely interventions."
       },
       {
         value: "Earlier",
-        label: "renewal opportunity identification",
+        label: "Renewal opportunity identification",
         detail: "Teams could act before customers entered a high-risk decision window."
       },
       {
         value: "Lower",
-        label: "cost to retain vs. reacquire",
+        label: "Cost to retain vs. reacquire",
         detail: "Personalized journeys supported more efficient retention economics."
       }
     ],
