@@ -71,7 +71,7 @@ export const siteConfig = {
   description:
     "Product manager with technical depth across AI-enabled workflows, data systems, APIs, and platform-scale operating models.",
   heroIntro:
-    "I build 0→1 products and platform capabilities that connect user workflows, data systems, and business outcomes. My work sits at the intersection of product ownership, technical fluency, and scalable operating design.",
+    "I lead products from idea to launch, translating business problems into user workflows, system requirements, and measurable outcomes. My background spans AI-enabled products, data platforms, and operational workflows.",
   url: "https://james-umole-portfolio.netlify.app",
   email: "mailto:umolejames@gmail.com",
   linkedin: "https://linkedin.com/in/jamesumole"
@@ -80,30 +80,30 @@ export const siteConfig = {
 export const heroHighlights = [
   {
     title: "Focus",
-    body: "AI-enabled products grounded in measurable operational value."
+    body: "AI and data products tied to real operational outcomes."
   },
   {
     title: "Strength",
-    body: "Platform thinking across APIs, reporting layers, and scalable workflows."
+    body: "Strong systems thinking across APIs, integrations, analytics, and workflow design."
   },
   {
     title: "Fit",
-    body: "Product Manager, Technical PM, and AI/data-platform roles."
+    body: "Best aligned to Product Manager, Technical PM, and AI/Data Platform roles."
   }
 ];
 
 export const operatingLens = [
   {
     title: "Workflow layer",
-    body: "Design journeys that reduce friction for customers and internal teams."
+    body: "Design customer and internal workflows that reduce friction and improve execution."
   },
   {
     title: "System layer",
-    body: "Define APIs, integrations, and operating boundaries that scale cleanly."
+    body: "Define APIs, integrations, and product boundaries that support scale."
   },
   {
     title: "Data layer",
-    body: "Instrument the product so decisions, reporting, and AI features are grounded."
+    body: "Build the data foundation needed for reporting, decision-making, and AI-driven features."
   }
 ];
 

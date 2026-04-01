@@ -6,7 +6,7 @@ export function HeroSection() {
     <section className="section-shell grid gap-16 pt-16 lg:grid-cols-[1.1fr_0.9fr] lg:items-center lg:pt-24">
       <div className="max-w-3xl">
         <p className="text-sm font-semibold uppercase tracking-[0.32em] text-accent">
-          Recruiter-focused portfolio
+          PRODUCT MANAGER | AI, DATA & PLATFORM PRODUCTS
         </p>
         <h1 className="mt-6 text-5xl font-semibold tracking-tight text-white sm:text-6xl lg:text-7xl">
           {siteConfig.title}
@@ -78,9 +78,9 @@ export function HeroSection() {
 
             <div className="mt-8 rounded-3xl border border-accent/20 bg-accent/10 p-5">
               <p className="text-sm leading-6 text-slate-100">
-                Recent work spans leasing systems, analytics products, and lending
-                workflows where success depended on product clarity, strong data
-                foundations, and cross-functional execution.
+                I&apos;ve led work across leasing systems, analytics platforms, and
+                lending workflows where strong product thinking, reliable data,
+                and cross-functional execution were critical to success.
               </p>
             </div>
           </div>
