@@ -135,7 +135,7 @@ export const caseStudies: CaseStudy[] = [
     overview:
       "The Online Leasing Engine was built as a flagship digital leasing experience that unified application intake, verification, payment, signing, and operational visibility into one product flow.",
     company: "Property Vista",
-    period: "2022 - Present",
+    period: "Dec 2021 - Present",
     liveUrl: "https://www.vidabypropertyvista.com/ai-leasing-engine",
     tags: [
       "0→1 delivery",
@@ -221,7 +221,7 @@ export const caseStudies: CaseStudy[] = [
     overview:
       "Vista Analytics reframed reporting as a product capability by turning fragmented operational data into reusable pipelines, dashboards, and customer-facing analytics surfaces.",
     company: "Property Vista",
-    period: "2023 - Present",
+    period: "Dec 2021 - Present",
     liveUrl: "https://www.vidabypropertyvista.com/vida-analytics",
     tags: [
       "Analytics",
