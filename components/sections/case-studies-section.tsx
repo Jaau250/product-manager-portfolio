@@ -7,8 +7,8 @@ export function CaseStudiesSection() {
     <section id="case-studies" className="section-shell">
       <SectionHeading
         eyebrow="Case Studies"
-        title="Structured product stories built around outcome, scale, and technical depth"
-        description="Each case study is written for recruiters and hiring managers who want to understand ownership, the system behind the product, and the measurable business result."
+        title="Case studies focused on ownership, systems, and measurable impact"
+        description="Each case highlights what was built, how it worked, and the business outcomes it delivered."
       />
 
       <div className="mt-12 grid gap-6 xl:grid-cols-3">
