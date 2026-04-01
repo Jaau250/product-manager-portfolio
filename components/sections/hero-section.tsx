@@ -3,19 +3,19 @@ import { heroHighlights, operatingLens, siteConfig } from "@/content/portfolio";
 
 export function HeroSection() {
   return (
-    <section className="section-shell grid gap-16 pt-16 lg:grid-cols-[1.1fr_0.9fr] lg:items-center lg:pt-24">
-      <div className="max-w-3xl">
+    <section className="section-shell grid gap-12 pt-10 sm:pt-12 lg:grid-cols-[1.1fr_0.9fr] lg:items-start lg:gap-14 lg:pt-14">
+      <div className="max-w-[44rem] lg:pt-2">
         <p className="text-sm font-semibold uppercase tracking-[0.32em] text-accent">
           PRODUCT MANAGER | AI, DATA & PLATFORM PRODUCTS
         </p>
-        <h1 className="mt-6 text-5xl font-semibold tracking-tight text-white sm:text-6xl lg:text-7xl">
+        <h1 className="mt-4 text-5xl font-semibold tracking-tight text-white sm:text-6xl lg:text-7xl lg:leading-[0.94]">
           {siteConfig.title}
         </h1>
-        <p className="mt-6 max-w-2xl text-lg leading-8 text-slate-300 sm:text-xl">
+        <p className="mt-5 max-w-2xl text-lg leading-8 text-slate-300 sm:text-xl">
           {siteConfig.heroIntro}
         </p>
 
-        <div className="mt-10 flex flex-col gap-4 sm:flex-row">
+        <div className="mt-8 flex flex-col gap-4 sm:flex-row">
           <a
             href="#case-studies"
             data-analytics-event="hero_case_studies_clicked"
@@ -34,7 +34,7 @@ export function HeroSection() {
           </a>
         </div>
 
-        <div className="mt-12 grid gap-4 sm:grid-cols-3">
+        <div className="mt-10 grid gap-4 sm:grid-cols-3">
           {heroHighlights.map((item) => (
             <div
               key={item.title}
@@ -49,16 +49,16 @@ export function HeroSection() {
         </div>
       </div>
 
-      <div className="flex flex-col items-center gap-6 lg:items-end">
+      <div className="flex flex-col items-center gap-6 lg:items-end lg:pt-1">
         <HeroImage />
 
         <div className="surface w-full max-w-[420px] overflow-hidden p-1 shadow-glow">
           <div className="rounded-[28px] border border-white/10 bg-mesh p-8">
-            <div className="flex items-center justify-between">
-              <p className="text-sm font-semibold uppercase tracking-[0.24em] text-accent">
+            <div className="flex items-center justify-between gap-3">
+              <p className="min-w-0 pr-2 text-sm font-semibold uppercase tracking-[0.24em] text-accent">
                 Product Operating Lens
               </p>
-              <span className="rounded-full border border-lime/30 bg-lime/10 px-3 py-1 text-xs font-medium text-lime">
+              <span className="shrink-0 whitespace-nowrap rounded-full border border-lime/30 bg-lime/10 px-2.5 py-0.5 text-[11px] font-medium text-lime sm:px-3 sm:py-1 sm:text-xs">
                 Platform-ready
               </span>
             </div>

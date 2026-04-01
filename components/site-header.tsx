@@ -4,7 +4,7 @@ const navItems = [
   { href: "#case-studies", label: "Case Studies" },
   { href: "#technical-depth", label: "Technical Depth" },
   { href: "#experience", label: "Experience" },
-  { href: "#innovation-lab", label: "Innovation Lab" }
+  { href: "#innovation-lab", label: "Build Lab" }
 ];
 
 export function SiteHeader() {
@@ -15,7 +15,7 @@ export function SiteHeader() {
           <p className="text-sm font-semibold uppercase tracking-[0.28em] text-accent">
             James Umole
           </p>
-          <p className="text-sm text-mist">Product Manager | AI & Data Platforms</p>
+          <p className="text-sm text-mist">Product Manager | AI, Data &amp; Platform Products</p>
         </Link>
 
         <nav className="hidden items-center gap-8 lg:flex">
