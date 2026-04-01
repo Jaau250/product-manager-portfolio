@@ -258,18 +258,18 @@ export const caseStudies: CaseStudy[] = [
       "I drove the productization of a shared analytics layer: reusable data models, pipeline orchestration, curated dashboards, and AI-enabled signals that moved the team from reactive reporting to active decision support.",
     measurableOutcomes: [
       {
-        value: "Hours → minutes",
+        value: "Hours → Minutes",
         label: "QBR preparation time",
         detail: "Dashboards replaced manual report assembly and spreadsheet stitching."
       },
       {
-        value: "Self-serve analytics access",
-        label: "Customer analytics access",
+        value: "Self-serve analytics",
+        label: "Customer access",
         detail: "Stakeholders could answer core questions without waiting on custom extracts."
       },
       {
-        value: "Real-time operational visibility",
-        label: "Operational KPI visibility",
+        value: "Real-time visibility",
+        label: "Operational KPIs",
         detail: "Leasing, funnel, and portfolio trends became visible in near real time."
       }
     ],

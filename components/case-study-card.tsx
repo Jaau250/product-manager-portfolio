@@ -37,16 +37,16 @@ export function CaseStudyCard({ study }: CaseStudyCardProps) {
         ))}
       </div>
 
-      <div className="mt-8 grid auto-rows-fr gap-3 sm:grid-cols-3">
+      <div className="mt-8 grid auto-rows-fr gap-4 lg:grid-cols-2">
         {study.measurableOutcomes.map((outcome) => (
           <div
             key={`${study.slug}-${outcome.value}-${outcome.label}`}
-            className="flex h-full flex-col overflow-hidden rounded-2xl border border-white/10 bg-ink/60 p-5"
+            className="flex h-full min-w-0 flex-col overflow-hidden rounded-2xl border border-white/10 bg-ink/60 p-5"
           >
             <p className="text-lg font-semibold leading-tight text-white sm:text-xl">
               {outcome.value}
             </p>
-            <p className="mt-2 overflow-hidden break-normal text-sm leading-[1.35] text-mist">
+            <p className="mt-2.5 max-w-full whitespace-normal break-normal text-sm leading-[1.38] text-mist">
               {outcome.label}
             </p>
           </div>
