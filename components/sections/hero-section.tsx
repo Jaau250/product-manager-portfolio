@@ -22,7 +22,7 @@ export function HeroSection() {
             data-analytics-label="hero-view-case-studies"
             className="inline-flex items-center justify-center rounded-full bg-white px-6 py-3.5 text-sm font-semibold text-slate-950 transition hover:bg-slate-200"
           >
-            View Case Studies
+            View My Work
           </a>
           <a
             href="#contact"

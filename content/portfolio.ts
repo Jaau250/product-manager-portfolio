@@ -67,7 +67,7 @@ export type CaseStudy = {
 
 export const siteConfig = {
   name: "James Umole",
-  title: "Product Manager | AI & Data Platforms",
+  title: "Product Manager | AI, Data & Platform Products",
   description:
     "Product manager with technical depth across AI-enabled workflows, data systems, APIs, and platform-scale operating models.",
   heroIntro:
