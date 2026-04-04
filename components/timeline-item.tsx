@@ -17,7 +17,7 @@ export function TimelineItem({
             {company} • {location}
           </p>
         </div>
-        <p className="text-sm uppercase tracking-[0.2em] text-accent">{period}</p>
+        <p className="text-sm tracking-[0.08em] text-accent">{period}</p>
       </div>
 
       <p className="mt-5 text-base leading-7 text-mist">{summary}</p>

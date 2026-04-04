@@ -7,8 +7,8 @@ export function ExperienceSection() {
     <section id="experience" className="section-shell">
       <SectionHeading
         eyebrow="Experience"
-        title="Product ownership across PropTech and financial services"
-        description="The throughline in my work is translating ambiguous business problems into scalable product systems with clear metrics, operating rhythm, and cross-functional alignment."
+        title="Product leadership across PropTech and financial services"
+        description="My experience centers on turning ambiguous business problems into scalable product systems, aligning teams around clear workflows, measurable outcomes, and reliable delivery."
       />
 
       <div className="mt-12 grid gap-6">
