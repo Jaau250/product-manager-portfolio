@@ -116,10 +116,6 @@ export function TechnicalDepthSection() {
             ))}
           </div>
 
-          <p className="text-sm leading-6 text-mist">
-            Applied across leasing platforms, analytics systems, and AI-assisted
-            workflows in production environments.
-          </p>
         </div>
       </div>
     </section>
