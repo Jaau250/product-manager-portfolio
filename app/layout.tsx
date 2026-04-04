@@ -43,7 +43,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className="scroll-smooth">
-      <body className="bg-ink font-sans text-white antialiased">
+      <body suppressHydrationWarning className="bg-ink font-sans text-white antialiased">
         <PortfolioAnalytics />
         {children}
       </body>
