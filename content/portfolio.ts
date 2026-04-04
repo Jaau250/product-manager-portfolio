@@ -503,7 +503,7 @@ export const sideProjects: SideProject[] = [
     title: "AI Job Application Tracker",
     format: "Workflow product build",
     summary:
-      "A full-stack application tracking system designed to help job seekers manage applications, track progress, and stay organized across multiple opportunities.\n\nIntegrates job boards, application tracking, notes, follow-ups, and contact management into a single workflow system. AI features analyze job descriptions, extract ATS-relevant skills, and assist users in tailoring resumes for better alignment and conversion.",
+      "A full-stack application tracking system helping job seekers manage applications, track progress, and stay organized across opportunities.\n\nIntegrates job boards, tracking, notes, follow-ups, and contacts into a single workflow. AI features analyze job descriptions and assist with ATS-aligned resume updates.",
     proof:
       "Shows my ability to design and ship a complete product, combining workflow management, integrations, and AI-assisted features to solve a real user problem end-to-end.",
     tags: [
