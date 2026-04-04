@@ -1,0 +1,17 @@
+<svg width="256" height="256" viewBox="0 0 256 256" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="256" height="256" rx="64" fill="#070B14"/>
+  <rect x="12" y="12" width="232" height="232" rx="52" fill="url(#panelGlow)" stroke="rgba(125, 211, 252, 0.24)" stroke-width="2"/>
+  <path d="M158 58H109.5V77H139V146.5C139 164.449 127.96 176 111.5 176C102.603 176 95.2954 172.48 89.5 165.5L76 180.5C84.4371 190.839 96.8859 196 112 196C139.991 196 158 176.936 158 146V58Z" fill="url(#letterGlow)"/>
+  <circle cx="185" cy="75" r="10" fill="#F59E0B" fill-opacity="0.9"/>
+  <defs>
+    <linearGradient id="panelGlow" x1="42" y1="24" x2="214" y2="232" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#10243B"/>
+      <stop offset="0.52" stop-color="#0B1321"/>
+      <stop offset="1" stop-color="#0A101A"/>
+    </linearGradient>
+    <linearGradient id="letterGlow" x1="87" y1="67" x2="171" y2="192" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#7DD3FC"/>
+      <stop offset="1" stop-color="#86EFAC"/>
+    </linearGradient>
+  </defs>
+</svg>
