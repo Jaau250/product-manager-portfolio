@@ -550,11 +550,11 @@ export const experience: ExperienceItem[] = [
     location: "Toronto, ON",
     period: "Dec 2021 – Present",
     summary:
-      "Owned product strategy and delivery for leasing and analytics platforms used by property management teams, with a focus on scalable workflows, measurable outcomes, and platform-ready systems.",
+      "Owned product strategy and delivery for leasing and analytics platforms used by property management teams, with a focus on scalable workflows, measurable outcomes, and platform-ready systems across thousands of units.",
     highlights: [
       "Led 0→1 delivery of the Online Leasing Engine, connecting applications, verification workflows, payments, and e-signature into a unified leasing experience.",
       "Built analytics capabilities that transformed reporting into a reusable, customer-facing product for internal teams, GTM stakeholders, and external users.",
-      "Partnered across design, engineering, legal, and go-to-market teams to ship operationally credible products across leasing, analytics, and AI-assisted workflows."
+      "Partnered across design, engineering, legal, and go-to-market teams to ship products with strong operational reliability across leasing, analytics, and AI-assisted workflows."
     ]
   },
   {
@@ -563,11 +563,11 @@ export const experience: ExperienceItem[] = [
     location: "London, ON",
     period: "Jun 2019 – Nov 2021",
     summary:
-      "Worked across lending and digital banking workflows, translating business goals into product structure while balancing customer needs, compliance requirements, and delivery constraints.",
+      "Led product work across lending and digital banking workflows, translating business goals into structured product solutions while balancing customer needs, compliance requirements, and delivery constraints.",
     highlights: [
-      "Contributed to mortgage renewal and retention products designed to protect balances and improve renewal outcomes.",
-      "Worked with data, pricing, compliance, and delivery teams to define MVP scope, prioritize requirements, and support execution in a regulated environment.",
-      "Brought product structure to complex financial workflows where timing, trust, and operational accuracy were critical."
+      "Delivered features supporting mortgage renewal and retention, focused on protecting balances and improving renewal outcomes.",
+      "Collaborated with data, pricing, compliance, and delivery teams to define MVP scope, prioritize requirements, and support execution in a regulated environment.",
+      "Introduced product structure to complex financial workflows where timing, trust, and operational accuracy were critical."
     ]
   }
 ];
