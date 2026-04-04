@@ -223,7 +223,7 @@ export const caseStudies: CaseStudy[] = [
     summary:
       "Led the development of a centralized analytics platform serving internal teams, GTM functions, and customers through role-based access. Built data pipelines and dashboards that transformed leasing, operations, and AI assistant data into decision-ready insights. Instrumented AI leasing assistant and nurturing data to support performance tracking and drive customer renewal conversations.",
     overview:
-      "Vista Analytics reframed reporting as a product capability by turning fragmented operational data into reusable pipelines, dashboards, and customer-facing analytics surfaces.",
+      "Vista Analytics transformed reporting into a product capability by turning fragmented operational data into reusable pipelines, governed data models, and self-serve analytics surfaces.\n\nIt enabled internal teams, GTM functions, and customers to access consistent, decision-ready insights without relying on manual reporting or ad hoc data pulls.",
     company: "Property Vista",
     period: "Dec 2021 - Present",
     liveUrl: "https://www.vidabypropertyvista.com/vida-analytics",
@@ -237,69 +237,70 @@ export const caseStudies: CaseStudy[] = [
       "AI data instrumentation"
     ],
     users: [
-      "Executives and operators preparing QBRs and monitoring KPIs",
-      "Customer teams that needed self-serve portfolio visibility",
-      "Internal product and operations teams making prioritization decisions"
+      "Executives and operators preparing QBRs and monitoring performance KPIs",
+      "Customer-facing teams requiring self-serve portfolio visibility",
+      "Product and operations teams making prioritization and optimization decisions"
     ],
     stakeholders: [
-      "Data and engineering teams responsible for ETL, modeling, and system performance",
-      "Customer-facing teams that needed trustworthy reporting in front of clients",
-      "Leadership stakeholders looking for faster and more consistent decision support"
+      "Data and engineering teams responsible for pipelines, modeling, and system performance",
+      "Customer-facing teams delivering insights to clients",
+      "Leadership stakeholders requiring consistent, reliable decision support"
     ],
     constraints: [
-      "Source data was fragmented and not originally designed as a product-grade analytics layer.",
-      "The solution had to support both internal reporting and customer-facing multi-tenant access.",
-      "AI-enabled insights had to be useful and credible without overclaiming automation."
+      "Source data was fragmented and not originally designed for product-grade analytics",
+      "The solution had to support both internal reporting and customer-facing multi-tenant access",
+      "AI-assisted insights needed to be credible, explainable, and grounded in trusted data"
     ],
     problem:
-      "Operational and leasing data lived in different systems, so reporting was slow, inconsistent, and heavily dependent on ad hoc data pulls.",
+      "Operational and leasing data lived across disconnected systems, making reporting slow, inconsistent, and dependent on manual extraction and spreadsheet workflows.",
     approach: [
-      "Started with the business questions and KPI definitions before choosing dashboard outputs.",
-      "Prioritized reusable transformations and data models over one-off report requests.",
-      "Treated analytics as a product surface with adoption, trust, and governance requirements."
+      "Started from business questions and KPI definitions before defining dashboards or outputs",
+      "Prioritized reusable data models and pipelines over one-off reporting requests",
+      "Designed analytics for adoption, trust, and governance as core product requirements"
     ],
     solution:
-      "I drove the productization of a shared analytics layer: reusable data models, pipeline orchestration, curated dashboards, and AI-enabled signals that moved the team from reactive reporting to active decision support.",
+      "Delivered a centralized analytics platform built on reusable data pipelines, structured data models, and governed access controls.\n\nEnabled self-serve dashboards, real-time operational visibility, and AI-assisted signals that shifted teams from reactive reporting to proactive decision-making.",
     measurableOutcomes: [
       {
         value: "Hours → Minutes",
         label: "QBR preparation time",
-        detail: "Dashboards replaced manual report assembly and spreadsheet stitching."
+        detail: "Replaced manual reporting workflows and spreadsheet stitching with structured dashboards."
       },
       {
         value: "Self-serve analytics",
         label: "Customer access",
-        detail: "Stakeholders could answer core questions without waiting on custom extracts."
+        detail: "Enabled stakeholders to answer core business questions without relying on custom data pulls."
       },
       {
         value: "Real-time visibility",
         label: "Operational KPIs",
-        detail: "Leasing, funnel, and portfolio trends became visible in near real time."
+        detail: "Made leasing, funnel, and portfolio performance visible in near real-time."
       }
     ],
     responsibilities: [
-      "Defined the analytics roadmap and aligned it to business questions, not vanity metrics.",
-      "Partnered with engineering and data teams on pipeline design, modeling, and dashboard prioritization.",
-      "Balanced internal reporting needs with customer-facing multi-tenant product requirements.",
-      "Introduced AI-assisted insights carefully, positioning them as decision support rather than black-box automation."
+      "Defined the analytics product roadmap aligned to business questions and operational KPIs",
+      "Partnered with data and engineering teams on pipeline design, modeling, and dashboard prioritization",
+      "Structured analytics as a product surface supporting both internal and customer-facing use cases",
+      "Introduced AI-assisted insights as decision-support layers, grounded in reliable and instrumented data"
     ],
     technicalComponents: [
-      "AWS Glue for ETL and reusable transformation workflows",
-      "S3, warehouse layers, and BI connectors for structured analytics access",
-      "API and connector patterns that enabled downstream dashboards and reporting surfaces",
-      "Pipeline orchestration and governance to maintain refresh quality and tenant-aware access"
+      "AWS Glue-based ETL pipelines for reusable data transformation workflows",
+      "S3-backed storage and warehouse layers for structured, analytics-ready data",
+      "API and connector patterns enabling downstream dashboards and reporting surfaces",
+      "Pipeline orchestration and governance to maintain data freshness, quality, and tenant-aware access"
     ],
     tradeoffs: [
-      "Prioritized metric consistency and data quality over shipping a broader dashboard set too early.",
-      "Introduced AI-assisted insights as support layers rather than headline features until the data was dependable.",
-      "Balanced customer-facing flexibility with governance and tenant-aware access controls."
+      "Prioritized data consistency and metric definition over rapidly shipping new dashboards",
+      "Delayed AI-facing features until underlying data reliability and trust were established",
+      "Balanced customer-facing flexibility with governance and multi-tenant access control"
     ],
     keyLearnings: [
-      "Analytics products break down when metric definitions are fuzzy, even if the interface looks strong.",
-      "Reusable data modeling creates leverage long after the first dashboard ships.",
-      "AI stories become more credible when grounded in operationally trusted data."
+      "Analytics products fail when metric definitions are inconsistent, even if the UI is strong",
+      "Reusable data models create long-term leverage beyond individual dashboards",
+      "AI-driven insights are only valuable when grounded in trusted, operational data"
     ],
     heroStat: "Analytics as a product surface",
+    hideSupplementarySection: true,
     artifact: {
       src: "/images/analytics-dashboard.png",
       alt: "Vista Analytics dashboard preview",
