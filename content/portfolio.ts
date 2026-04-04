@@ -134,7 +134,7 @@ export const caseStudies: CaseStudy[] = [
     eyebrow: "Flagship Case Study",
     title: "Online Leasing Engine",
     summary:
-      "Led the 0→1 build of an end-to-end leasing platform, orchestrating multiple integrations across identity verification, credit checks, banking data, payments, and e-signature into a unified product experience. Designed and scaled leasing workflows across thousands of units, enabling faster, fully digital application-to-lease conversion.",
+      "Led the 0→1 build of a multi-integration leasing platform, orchestrating multiple integrations across identity verification, credit checks, banking data, payments, and e-signature into a unified product experience. Designed and scaled leasing workflows across thousands of units, enabling faster, fully digital application-to-lease conversion.",
     overview:
       "The Online Leasing Engine is a digital leasing platform that unified application intake, identity verification, payments, and lease signing into a single, end-to-end workflow.\n\nIt replaced fragmented, manual processes with a structured, API-driven system that improved conversion speed, reduced operational friction, and enabled full visibility across the leasing funnel.",
     company: "Property Vista",
@@ -176,9 +176,9 @@ export const caseStudies: CaseStudy[] = [
       "Delivered a modular leasing platform that unified application intake, verification, payments, document execution, and telemetry into a single product flow.\n\nBuilt on API-first architecture with AWS-backed services and integrated third-party providers, enabling scalable workflows and consistent user experiences across properties.",
     measurableOutcomes: [
       {
-        value: "85%",
-        label: "Reduction in time to lease",
-        detail: "Shifted leasing from manual coordination to a structured, fully digital workflow."
+        value: "5,000+",
+        label: "Units supported",
+        detail: "Scaled across multiple properties and operational teams with consistent system behavior."
       },
       {
         value: "1,000+",
@@ -186,9 +186,9 @@ export const caseStudies: CaseStudy[] = [
         detail: "Built for sustained operational volume rather than one-time launches."
       },
       {
-        value: "5,000+",
-        label: "Units supported",
-        detail: "Scaled across multiple properties and operational teams with consistent system behavior."
+        value: "85%",
+        label: "Reduction in time to lease",
+        detail: "Shifted leasing from manual coordination to a structured, fully digital workflow."
       }
     ],
     responsibilities: [
@@ -221,21 +221,13 @@ export const caseStudies: CaseStudy[] = [
     eyebrow: "Data Platform Case Study",
     title: "Vista Analytics",
     summary:
-      "Led the development of a centralized analytics platform serving internal teams, GTM functions, and customers through role-based access. Built data pipelines and dashboards that transformed leasing, operations, and AI assistant data into decision-ready insights. Instrumented AI leasing assistant and nurturing data to support performance tracking and drive customer renewal conversations.",
+      "Led the development of a centralized analytics platform serving internal teams, GTM functions, and customers through role-based access. Built data pipelines and dashboards that transformed leasing, operations, and AI assistant data into decision-ready insights. Instrumented AI leasing assistant and nurturing signals to support performance tracking and drive customer renewal conversations.",
     overview:
       "Vista Analytics transformed reporting into a product capability by turning fragmented operational data into reusable pipelines, governed data models, and self-serve analytics surfaces.\n\nThe platform unified leasing, maintenance requests, purchase orders, insurance data, tenant demographics, and AI-driven leasing signals into a single analytics layer.\n\nIt enabled internal teams and external customers to access consistent, decision-ready insights through embedded dashboards, Power BI integrations, and self-serve analytics tooling.",
     company: "Property Vista",
     period: "Dec 2021 - Present",
     liveUrl: "https://www.vidabypropertyvista.com/vida-analytics",
-    tags: [
-      "Analytics",
-      "AWS Glue",
-      "Dashboards",
-      "Data pipelines",
-      "RBAC / Access control",
-      "Customer analytics",
-      "AI data instrumentation"
-    ],
+    tags: ["Analytics", "Data pipelines", "RBAC", "Customer analytics", "AI instrumentation"],
     users: [
       "Executives and operators preparing QBRs and monitoring performance KPIs",
       "Customer-facing teams requiring self-serve portfolio visibility",
@@ -321,15 +313,7 @@ export const caseStudies: CaseStudy[] = [
     company: "TD Canada Trust",
     period: "2019 - 2021",
     liveUrl: "https://www.td.com/ca/en/personal-banking/products/mortgages/mortgage-offers",
-    tags: [
-      "Fintech",
-      "Customer data",
-      "Renewals",
-      "Retention strategy",
-      "Scoring models",
-      "Customer segmentation",
-      "Retention analytics"
-    ],
+    tags: ["Fintech", "Customer data", "Retention strategy", "Scoring models"],
     users: [
       "Mortgage customers approaching renewal windows",
       "Advisors and servicing teams prioritizing outreach and offers",

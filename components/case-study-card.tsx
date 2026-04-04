@@ -37,11 +37,11 @@ export function CaseStudyCard({ study }: CaseStudyCardProps) {
         ))}
       </div>
 
-      <div className="mt-8 grid auto-rows-fr gap-4 lg:grid-cols-2">
+      <div className="mt-6 grid grid-cols-2 gap-4">
         {study.measurableOutcomes.map((outcome) => (
           <div
             key={`${study.slug}-${outcome.value}-${outcome.label}`}
-            className="flex h-full min-w-0 flex-col overflow-hidden rounded-2xl border border-white/10 bg-ink/60 p-5"
+            className="flex h-[110px] min-w-0 flex-col justify-center overflow-hidden rounded-xl border border-white/10 bg-white/5 p-4"
           >
             <p className="text-lg font-semibold leading-tight text-white sm:text-xl">
               {outcome.value}
@@ -68,7 +68,7 @@ export function CaseStudyCard({ study }: CaseStudyCardProps) {
             rel="noopener noreferrer"
             className="text-sm text-white/70 transition hover:text-white"
           >
-            External reference ↗
+            View product / live system ↗
           </a>
         ) : null}
       </div>
