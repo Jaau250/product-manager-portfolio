@@ -436,34 +436,34 @@ export const technicalDepthGroups: TechnicalDepthGroup[] = [
   {
     title: "API-first product architecture",
     summary:
-      "I work best on products where the user experience depends on clean service boundaries, integration choices, and scalable workflow orchestration.",
+      "I build products where user experience depends on clean service boundaries, reliable integrations, and scalable workflow orchestration.",
     badges: ["API-first architecture", "Integrations", "Platform workflows"],
     bullets: [
-      "Defined product requirements around how systems exchange data, trigger downstream actions, and stay observable in production.",
-      "Worked on products where payments, verification, document flows, and analytics all depended on dependable integration patterns.",
-      "Use platform thinking to avoid one-off workflow fixes that are hard to extend later."
+      "Defined system interactions across payments, verification, and document workflows",
+      "Ensured systems trigger downstream actions and remain observable in production",
+      "Designed for extensibility to avoid one-off workflow solutions"
     ]
   },
   {
     title: "Data pipelines and cloud tooling",
     summary:
-      "My technical depth is strongest where operational data needs to move cleanly from source systems into product, reporting, and decision layers.",
+      "I design data flows that move cleanly from source systems into reporting, analytics, and decision layers.",
     badges: ["AWS S3", "AWS Glue", "AWS DataBrew", "Data pipelines"],
     bullets: [
-      "Partnered on workflows that use S3-backed storage and data movement patterns to support downstream analytics and product reporting.",
-      "Worked closely with ETL and transformation design using Glue and DataBrew-style workflows for reporting readiness and operational visibility.",
-      "Think about data freshness, structure, and trust as product concerns, not just technical implementation details."
+      "Built pipelines using S3, Glue, and DataBrew-style workflows",
+      "Enabled reliable data movement for analytics and product reporting",
+      "Focused on data structure, freshness, and trust as product requirements"
     ]
   },
   {
     title: "Warehouse and analytics systems",
     summary:
-      "I’ve worked in environments where product quality depends on usable analytics, clear KPIs, and reliable access to decision-grade data.",
+      "I work on products where decision-making depends on accessible, well-structured analytics.",
     badges: ["Snowflake", "Analytics tools", "Dashboards", "KPIs"],
     bullets: [
-      "Comfortable shaping products that rely on Snowflake-style warehouse thinking, curated metrics, and reusable reporting layers.",
-      "Built around analytics tools and dashboard experiences that support operators, leadership, and customers with self-serve visibility.",
-      "Bias toward instrumentation and metric design early so teams can make stronger post-launch decisions."
+      "Designed dashboards and analytics tools for operators, leadership, and customers",
+      "Defined KPIs and reporting layers to support self-serve visibility",
+      "Prioritized instrumentation early to enable stronger post-launch decisions"
     ]
   }
 ];
@@ -472,22 +472,22 @@ export const technicalArchitectureLayers = [
   {
     label: "Product Layer",
     title: "User workflows",
-    detail: "Applications, dashboards, and decision-support experiences."
+    detail: "User-facing workflows, dashboards, and decision-support experiences."
   },
   {
     label: "Integration Layer",
     title: "APIs and services",
-    detail: "Partner integrations, orchestration, business rules, and events."
+    detail: "External integrations, orchestration logic, business rules, and event-driven interactions."
   },
   {
     label: "Data Layer",
     title: "Pipelines and storage",
-    detail: "S3, Glue, DataBrew, warehouse structures, and reporting-ready models."
+    detail: "Data pipelines, storage layers (S3), transformation workflows (Glue/DataBrew), and reporting-ready models."
   },
   {
     label: "Insight Layer",
     title: "Analytics and action",
-    detail: "Dashboards, KPI tracking, Snowflake-style access, and operator decisions."
+    detail: "Dashboards, KPI tracking, self-serve analytics, and decision support for operators and leadership."
   }
 ];
 

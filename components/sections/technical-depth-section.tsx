@@ -11,8 +11,8 @@ export function TechnicalDepthSection() {
         <div>
           <SectionHeading
             eyebrow="Technical Depth"
-            title="Technical depth built around systems, data flow, and product decisions"
-            description="I’m strongest in product environments where user value depends on the quality of the underlying system design: APIs, data movement, analytics readiness, and clear operating visibility."
+            title="How I design and scale product systems"
+            description="I focus on how workflows, systems, and data connect to deliver reliable, scalable product experiences. My work sits at the intersection of product ownership, system design, and operational impact."
           />
 
           <div className="mt-8 rounded-[28px] border border-accent/20 bg-accent/10 p-6">
@@ -20,9 +20,9 @@ export function TechnicalDepthSection() {
               Practical lens
             </p>
             <p className="mt-4 text-sm leading-6 text-slate-100">
-              I don&apos;t list tools as credentials. I highlight the systems I&apos;ve
-              helped shape, the tradeoffs I can reason about, and the product
-              decisions that improved operational outcomes.
+              I don&apos;t list tools as credentials. I focus on the systems I&apos;ve
+              shaped, the tradeoffs I&apos;ve navigated, and the product decisions
+              that improved real operational outcomes.
             </p>
           </div>
 
