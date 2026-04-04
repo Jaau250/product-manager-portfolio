@@ -65,6 +65,8 @@ export type CaseStudy = {
   };
 };
 
+const siteUrl = process.env.NEXT_PUBLIC_SITE_URL?.replace(/\/$/, "") ?? "http://localhost:3000";
+
 export const siteConfig = {
   name: "James Umole",
   title: "Product Manager | AI, Data & Platform Products",
@@ -72,7 +74,7 @@ export const siteConfig = {
     "Product manager with technical depth across AI-enabled workflows, data systems, APIs, and platform-scale operating models.",
   heroIntro:
     "I lead products from idea to launch, translating business problems into user workflows, system requirements, and measurable outcomes. My background spans AI-enabled products, data platforms, and operational workflows.",
-  url: "https://james-umole-portfolio.netlify.app",
+  url: siteUrl,
   email: "mailto:umolejames@gmail.com",
   linkedin: "https://linkedin.com/in/jamesumole"
 };

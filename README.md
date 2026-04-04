@@ -45,7 +45,7 @@ public/
 1. Leave the original static HTML files in place as source material during migration.
 2. Rebuild the homepage first using structured portfolio data and reusable components.
 3. Migrate case studies into static Next.js routes with stronger storytelling and SEO metadata.
-4. Export the site as static files so Netlify deployment stays simple.
+4. Keep the app deployable on modern Next.js hosting with minimal custom configuration.
 5. Replace or retire the legacy HTML pages only after the new site is reviewed and deployed.
 
 ## Local development
@@ -56,6 +56,7 @@ npm run dev
 ```
 
 Open `http://localhost:3000`.
+If that port is busy, Next.js will automatically choose the next available port.
 
 ## Production build
 
@@ -63,38 +64,28 @@ Open `http://localhost:3000`.
 npm run build
 ```
 
-The static site will be generated in `out/`.
+For a local production smoke test, run:
 
-## Netlify deployment
+```bash
+npm run start
+```
 
-Use these settings if Netlify does not auto-detect them:
+## Contact form delivery
 
-- Build command: `npm run build`
-- Publish directory: `out`
-- Node version: `20`
+This portfolio keeps backend functionality intentionally small and Vercel-friendly:
 
-The included `netlify.toml` already matches this setup.
-
-## Lightweight backend additions
-
-This portfolio keeps backend functionality intentionally small and Netlify-friendly:
-
-- Contact form submission uses Netlify Forms via static HTML form detection.
-- Email handling comes from Netlify form notifications. The form includes an `email` field so notification emails can use `Reply-To`.
-- A hidden `subject` field is included so notification emails have a cleaner subject line.
-- Netlify Web Analytics can be enabled in the dashboard for pageview tracking without adding a custom backend.
+- Contact form submission uses a minimal Next.js route handler at `app/api/contact/route.ts`.
+- Email delivery is handled through the Resend API using environment variables.
 - The app includes lightweight CTA and form event hooks through `PortfolioAnalytics`. These only emit events if you later add a provider like Plausible, Umami, or Google Analytics.
 
-### Netlify setup notes
+## Deployment
 
-1. Make sure form detection is enabled for the site.
-2. After the first deploy, go to Netlify form notifications and add an email notification for the `portfolio-contact` form.
-3. If you want pageview analytics, enable Netlify Web Analytics in the project dashboard.
+See [DEPLOY.md](./DEPLOY.md) for the Vercel deployment steps and required environment variables.
 
 ## Content notes
 
-- The site is positioned around `Product Manager | AI & Data Platforms`.
+- The site is positioned around `Product Manager | AI, Data & Platform Products`.
 - Metrics and case-study content are centralized in `content/portfolio.ts`.
 - Some side-project copy is framed as prototype/experiment language to stay credible and avoid overclaiming.
-- The site currently assumes the existing Netlify URL: `https://james-umole-portfolio.netlify.app`
+- The canonical site URL is configured via `NEXT_PUBLIC_SITE_URL`.
 - The original static HTML files remain in the repo as migration reference material and can be retired after deployment approval.

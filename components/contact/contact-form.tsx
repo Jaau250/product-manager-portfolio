@@ -4,10 +4,6 @@ import { useState } from "react";
 
 type FormStatus = "idle" | "submitting" | "success" | "error";
 
-function encodeFormData(values: Record<string, string>) {
-  return new URLSearchParams(values).toString();
-}
-
 export function ContactForm() {
   const [status, setStatus] = useState<FormStatus>("idle");
 
@@ -23,12 +19,13 @@ export function ContactForm() {
     setStatus("submitting");
 
     try {
-      const response = await fetch("/", {
+      const response = await fetch("/api/contact", {
         method: "POST",
         headers: {
-          "Content-Type": "application/x-www-form-urlencoded"
+          "Content-Type": "application/json",
+          Accept: "application/json"
         },
-        body: encodeFormData(values)
+        body: JSON.stringify(values)
       });
 
       if (!response.ok) {
@@ -47,6 +44,7 @@ export function ContactForm() {
           }
         })
       );
+      window.location.assign("/contact-success");
     } catch {
       setStatus("error");
     }
@@ -54,22 +52,11 @@ export function ContactForm() {
 
   return (
     <form
-      name="portfolio-contact"
       method="POST"
-      action="/contact-success/"
-      data-netlify="true"
-      data-netlify-honeypot="bot-field"
+      action="/api/contact"
       onSubmit={handleSubmit}
       className="rounded-[28px] border border-white/10 bg-ink/70 p-7"
     >
-      <input type="hidden" name="form-name" value="portfolio-contact" />
-      <input
-        type="hidden"
-        name="subject"
-        value="Portfolio inquiry from %{formName} (%{submissionId})"
-        data-remove-prefix="true"
-      />
-
       <p className="hidden">
         <label>
           Don&apos;t fill this out if you&apos;re human:
@@ -142,7 +129,7 @@ export function ContactForm() {
           </button>
 
           <p className="text-sm leading-6 text-mist">
-            Form submissions are handled by Netlify Forms.
+            Messages are sent through a secure serverless contact endpoint.
           </p>
         </div>
 
