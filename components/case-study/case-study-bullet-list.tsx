@@ -14,9 +14,9 @@ export function CaseStudyBulletList({
   return (
     <ul className="space-y-3">
       {safeItems.map((item) => (
-        <li key={item} className="flex gap-3 text-sm leading-6 text-slate-200">
+        <li key={item} className="flex gap-3 text-sm leading-relaxed text-white/70">
           <span className={`mt-2 h-2 w-2 rounded-full ${bulletColor}`} />
-          <span>{item}</span>
+          <span className="max-w-[65ch]">{item}</span>
         </li>
       ))}
     </ul>

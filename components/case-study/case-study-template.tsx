@@ -12,7 +12,7 @@ type CaseStudyTemplateProps = {
 export function CaseStudyTemplate({ study }: CaseStudyTemplateProps) {
   return (
     <main className="section-shell pt-16 lg:pt-20">
-      <div className="rounded-[36px] border border-white/10 bg-white/[0.04] p-8 sm:p-10">
+      <div className="rounded-2xl border border-white/10 bg-white/5 p-8 backdrop-blur sm:p-8">
         <Link
           href="/"
           className="inline-flex items-center gap-2 text-sm font-semibold text-slate-300 transition hover:text-white"
@@ -30,17 +30,19 @@ export function CaseStudyTemplate({ study }: CaseStudyTemplateProps) {
               <h1 className="mt-4 text-4xl font-semibold tracking-tight text-white sm:text-5xl">
                 {study.title}
               </h1>
-              <p className="mt-4 text-lg leading-8 text-slate-300">{study.summary}</p>
+              <p className="mt-4 max-w-[65ch] text-sm leading-relaxed text-white/70 sm:text-base">
+                {study.summary}
+              </p>
             </div>
 
             <div className="grid gap-4 sm:grid-cols-2">
-              <div className="rounded-3xl border border-white/10 bg-ink/60 p-5">
+              <div className="rounded-2xl border border-white/10 bg-white/5 p-6 backdrop-blur">
                 <p className="text-xs font-semibold uppercase tracking-[0.24em] text-mist">
                   Company
                 </p>
                 <p className="mt-3 text-lg font-semibold text-white">{study.company}</p>
               </div>
-              <div className="rounded-3xl border border-white/10 bg-ink/60 p-5">
+              <div className="rounded-2xl border border-white/10 bg-white/5 p-6 backdrop-blur">
                 <p className="text-xs font-semibold uppercase tracking-[0.24em] text-mist">
                   Timeframe
                 </p>
@@ -48,7 +50,7 @@ export function CaseStudyTemplate({ study }: CaseStudyTemplateProps) {
               </div>
             </div>
 
-            <div className="rounded-3xl border border-white/10 bg-ink/60 p-6">
+            <div className="rounded-2xl border border-white/10 bg-white/5 p-6 backdrop-blur">
               <p className="text-xs font-semibold uppercase tracking-[0.24em] text-accent">
                 Snapshot
               </p>
@@ -56,10 +58,10 @@ export function CaseStudyTemplate({ study }: CaseStudyTemplateProps) {
                 {study.measurableOutcomes.map((outcome) => (
                   <div
                     key={`${study.slug}-${outcome.value}-${outcome.label}`}
-                    className="rounded-3xl border border-white/10 bg-white/[0.04] p-4"
+                    className="flex h-full flex-col justify-between gap-4 rounded-2xl border border-white/10 bg-white/5 p-6 backdrop-blur"
                   >
                     <p className="text-2xl font-semibold text-white">{outcome.value}</p>
-                    <p className="mt-2 text-xs uppercase tracking-[0.18em] text-slate-300">
+                    <p className="text-sm leading-relaxed text-white/70">
                       {outcome.label}
                     </p>
                   </div>
@@ -77,14 +79,18 @@ export function CaseStudyTemplate({ study }: CaseStudyTemplateProps) {
           </div>
 
           <CaseStudySectionCard eyebrow="01" title="Overview">
-            <p className="text-base leading-7 text-slate-200">{study.overview}</p>
+            <p className="whitespace-pre-line text-sm leading-relaxed text-white/70">
+              {study.overview}
+            </p>
           </CaseStudySectionCard>
         </div>
       </div>
 
       <section className="mt-16 grid gap-6 lg:grid-cols-2">
         <CaseStudySectionCard eyebrow="02" title="Problem">
-          <p className="text-base leading-7 text-slate-200">{study.problem}</p>
+          <p className="whitespace-pre-line text-sm leading-relaxed text-white/70">
+            {study.problem}
+          </p>
         </CaseStudySectionCard>
 
         <CaseStudySectionCard eyebrow="03" title="Users / Stakeholders">
@@ -121,11 +127,13 @@ export function CaseStudyTemplate({ study }: CaseStudyTemplateProps) {
         </CaseStudySectionCard>
 
         <CaseStudySectionCard eyebrow="07" title="Solution">
-          <p className="text-base leading-7 text-slate-200">{study.solution}</p>
+          <p className="whitespace-pre-line text-sm leading-relaxed text-white/70">
+            {study.solution}
+          </p>
         </CaseStudySectionCard>
 
         <CaseStudySectionCard eyebrow="08" title="Technical Design">
-          <p className="mb-4 text-sm leading-6 text-mist">
+          <p className="mb-4 text-sm leading-relaxed text-white/70">
             APIs, integrations, and data systems behind the product.
           </p>
           <CaseStudyBulletList items={study.technicalComponents} bulletColor="bg-lime" />
@@ -144,13 +152,13 @@ export function CaseStudyTemplate({ study }: CaseStudyTemplateProps) {
             {study.measurableOutcomes.map((outcome) => (
               <article
                 key={`${study.slug}-${outcome.value}-${outcome.label}-detail`}
-                className="rounded-3xl border border-white/10 bg-ink/60 p-5"
+                className="flex h-full flex-col justify-between gap-4 rounded-2xl border border-white/10 bg-white/5 p-6 backdrop-blur"
               >
                 <p className="text-2xl font-semibold text-white">{outcome.value}</p>
-                <p className="mt-2 text-xs uppercase tracking-[0.18em] text-slate-300">
+                <p className="text-sm leading-relaxed text-white/70">
                   {outcome.label}
                 </p>
-                <p className="mt-3 text-sm leading-6 text-mist">{outcome.detail}</p>
+                <p className="text-sm leading-relaxed text-white/70">{outcome.detail}</p>
               </article>
             ))}
           </div>

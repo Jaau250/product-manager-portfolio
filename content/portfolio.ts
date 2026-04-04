@@ -223,7 +223,7 @@ export const caseStudies: CaseStudy[] = [
     summary:
       "Led the development of a centralized analytics platform serving internal teams, GTM functions, and customers through role-based access. Built data pipelines and dashboards that transformed leasing, operations, and AI assistant data into decision-ready insights. Instrumented AI leasing assistant and nurturing data to support performance tracking and drive customer renewal conversations.",
     overview:
-      "Vista Analytics transformed reporting into a product capability by turning fragmented operational data into reusable pipelines, governed data models, and self-serve analytics surfaces.\n\nIt enabled internal teams, GTM functions, and customers to access consistent, decision-ready insights without relying on manual reporting or ad hoc data pulls.",
+      "Vista Analytics transformed reporting into a product capability by turning fragmented operational data into reusable pipelines, governed data models, and self-serve analytics surfaces.\n\nThe platform unified leasing, maintenance requests, purchase orders, insurance data, tenant demographics, and AI-driven leasing signals into a single analytics layer.\n\nIt enabled internal teams and external customers to access consistent, decision-ready insights through embedded dashboards, Power BI integrations, and self-serve analytics tooling.",
     company: "Property Vista",
     period: "Dec 2021 - Present",
     liveUrl: "https://www.vidabypropertyvista.com/vida-analytics",
@@ -242,9 +242,9 @@ export const caseStudies: CaseStudy[] = [
       "Product and operations teams making prioritization and optimization decisions"
     ],
     stakeholders: [
-      "Data and engineering teams responsible for pipelines, modeling, and system performance",
-      "Customer-facing teams delivering insights to clients",
-      "Leadership stakeholders requiring consistent, reliable decision support"
+      "Data and engineering teams (ETL, modeling, pipelines)",
+      "External customers using Power BI and embedded dashboards",
+      "Leadership requiring consistent cross-domain reporting"
     ],
     constraints: [
       "Source data was fragmented and not originally designed for product-grade analytics",
@@ -259,7 +259,7 @@ export const caseStudies: CaseStudy[] = [
       "Designed analytics for adoption, trust, and governance as core product requirements"
     ],
     solution:
-      "Delivered a centralized analytics platform built on reusable data pipelines, structured data models, and governed access controls.\n\nEnabled self-serve dashboards, real-time operational visibility, and AI-assisted signals that shifted teams from reactive reporting to proactive decision-making.",
+      "Delivered a centralized analytics platform built on reusable data pipelines, structured data models, and governed access controls.\n\nUnified leasing, maintenance, purchase orders, insurance, tenant demographics, and AI signals into one analytics layer.\n\nEnabled:\n- Superset dashboards for internal teams\n- Power BI integrations for customers\n- Real-time operational visibility",
     measurableOutcomes: [
       {
         value: "Hours → Minutes",
@@ -278,16 +278,19 @@ export const caseStudies: CaseStudy[] = [
       }
     ],
     responsibilities: [
-      "Defined the analytics product roadmap aligned to business questions and operational KPIs",
-      "Partnered with data and engineering teams on pipeline design, modeling, and dashboard prioritization",
-      "Structured analytics as a product surface supporting both internal and customer-facing use cases",
-      "Introduced AI-assisted insights as decision-support layers, grounded in reliable and instrumented data"
+      "Defined the analytics roadmap across leasing, maintenance, financial, and AI data domains",
+      "Designed pipelines for maintenance requests, purchase orders, insurance, tenant demographics, and AI signals",
+      "Enabled multi-tenant access for internal and external users",
+      "Supported Power BI integrations and built internal analytics using Superset",
+      "Positioned AI insights as decision-support, not black-box automation"
     ],
     technicalComponents: [
-      "AWS Glue-based ETL pipelines for reusable data transformation workflows",
-      "S3-backed storage and warehouse layers for structured, analytics-ready data",
-      "API and connector patterns enabling downstream dashboards and reporting surfaces",
-      "Pipeline orchestration and governance to maintain data freshness, quality, and tenant-aware access"
+      "AWS Glue ETL pipelines for multi-domain data ingestion",
+      "S3-backed storage and analytics-ready datasets",
+      "Data modeling for tenant-aware, multi-tenant access",
+      "Power BI connectors for external analytics access",
+      "Superset dashboards for internal analytics",
+      "Pipeline orchestration for data freshness and trust"
     ],
     tradeoffs: [
       "Prioritized data consistency and metric definition over rapidly shipping new dashboards",
