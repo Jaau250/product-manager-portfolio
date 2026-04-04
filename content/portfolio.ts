@@ -317,7 +317,7 @@ export const caseStudies: CaseStudy[] = [
     summary:
       "Led product initiatives for a mortgage retention platform, leveraging customer data, scoring models, and targeted outreach to identify at-risk accounts and improve renewal outcomes. Enabled earlier intervention and more effective retention strategies across the lending portfolio.",
     overview:
-      "This case study centers on a renewal and retention workflow designed to identify at-risk customers early, support tailored outreach, and improve renewal outcomes in a regulated environment.",
+      "This case study focuses on a mortgage renewal and retention platform designed to identify at-risk customers early, prioritize outreach, and improve renewal outcomes in a regulated financial environment.\n\nThe product combined customer data, segmentation models, and advisor workflows to enable timely, personalized engagement before customers entered high-risk churn windows.",
     company: "TD Canada Trust",
     period: "2019 - 2021",
     liveUrl: "https://www.td.com/ca/en/personal-banking/products/mortgages/mortgage-offers",
@@ -332,66 +332,66 @@ export const caseStudies: CaseStudy[] = [
     ],
     users: [
       "Mortgage customers approaching renewal windows",
-      "Advisers and internal teams prioritizing outreach and offer strategy",
-      "Risk, pricing, and compliance stakeholders overseeing execution"
+      "Advisors and servicing teams prioritizing outreach and offers",
+      "Internal teams monitoring retention performance and portfolio health"
     ],
     stakeholders: [
-      "Adviser and servicing teams acting on prioritized renewal opportunities",
-      "Pricing, analytics, and compliance groups shaping offer logic and guardrails",
-      "Business leaders focused on retention economics and customer value preservation"
+      "Pricing, risk, and compliance teams defining guardrails",
+      "Data and analytics teams supporting segmentation and scoring",
+      "Business leaders focused on retention economics and portfolio value"
     ],
     constraints: [
-      "The product operated in a regulated environment with strong governance expectations.",
-      "Offer timing and personalization had to improve retention without adding operational complexity for advisers.",
-      "Some implementation detail is intentionally abstracted here because of domain sensitivity."
+      "Operated in a regulated environment with strict compliance and governance requirements",
+      "Personalization and timing needed to improve retention without increasing operational complexity",
+      "System design had to balance advisor usability with risk and pricing controls"
     ],
     problem:
-      "Renewal opportunities were easy to miss or address too late, which created attrition risk and reduced the ability to match customers with timely, relevant offers.",
+      "Renewal opportunities were often identified too late or missed entirely, leading to preventable attrition and reduced portfolio retention.\n\nAdvisors lacked clear prioritization, and customer data was fragmented across systems, making it difficult to act with the right timing, context, and offer strategy.",
     approach: [
-      "Focused the MVP on earlier renewal identification and better cohort prioritization.",
-      "Worked across business, analytics, compliance, and delivery stakeholders to shape the workflow.",
-      "Used customer timing and retention economics to guide prioritization."
+      "Focused MVP on earlier identification of renewal opportunities and better cohort prioritization",
+      "Worked cross-functionally to align business, risk, and delivery teams around a shared workflow",
+      "Used retention economics and customer timing signals to guide prioritization decisions"
     ],
     solution:
-      "I led product work on a renewal and retention workflow that surfaced at-risk cohorts, supported tailored offers, and connected advisory teams with better timing, context, and measurable next steps.",
+      "Delivered a renewal and retention workflow that surfaced at-risk customers earlier, enabled targeted outreach, and supported advisors with better timing, context, and next-best actions.\n\nIntegrated customer data, scoring models, and workflow orchestration into a unified system that improved decision-making and execution across the lending portfolio.",
     measurableOutcomes: [
       {
         value: ">$2B",
         label: "Mortgage balances retained",
-        detail: "Retention strategy centered on proactive targeting and timely interventions."
+        detail: "Retention strategy contributed to preserving significant mortgage balances through earlier intervention"
       },
       {
         value: "Earlier",
         label: "Renewal opportunity identification",
-        detail: "Teams could act before customers entered a high-risk decision window."
+        detail: "Teams could act before customers entered high-risk renewal windows"
       },
       {
         value: "Lower",
         label: "Cost to retain vs. reacquire",
-        detail: "Personalized journeys supported more efficient retention economics."
+        detail: "Targeted outreach improved efficiency compared to reacquisition strategies"
       }
     ],
     responsibilities: [
-      "Connected business strategy, customer journey design, and technical delivery for renewal programs.",
-      "Worked across pricing, compliance, analytics, and delivery teams to define the right MVP.",
-      "Helped shape segmentation logic, prioritization, and the operating model for outreach.",
-      "Used customer and performance data to evaluate which cohorts, offers, and channels mattered most."
+      "Connected business strategy, customer journey design, and technical delivery for renewal programs",
+      "Partnered with pricing, compliance, analytics, and engineering teams to define MVP scope and rollout strategy",
+      "Helped shape segmentation logic, prioritization models, and advisor workflows",
+      "Used customer and performance data to evaluate which cohorts, offers, and channels drove the highest retention impact"
     ],
     technicalComponents: [
-      "Customer and product data pipelines feeding retention and prioritization workflows",
-      "Scoring and segmentation logic for renewal timing and outreach strategy",
-      "Integration points with adviser tooling, communication systems, and reporting layers",
-      "Governance-conscious workflow design appropriate for regulated financial products"
+      "Customer data pipelines feeding segmentation and prioritization workflows",
+      "Scoring and cohort models for renewal timing and outreach strategy",
+      "Integration with advisor tools, communication systems, and reporting layers",
+      "Governance-aware workflow design aligned with compliance and risk requirements"
     ],
     tradeoffs: [
-      "Balanced personalization and timing improvements against compliance and governance requirements.",
-      "Optimized for practical adviser decision support rather than fully automated renewal handling.",
-      "Abstracted some internal thresholds and implementation details in this portfolio version."
+      "Balanced personalization and timing improvements against compliance and governance constraints",
+      "Optimized for advisor decision support rather than fully automated renewal handling",
+      "Prioritized practical execution over overly complex modeling early on"
     ],
     keyLearnings: [
-      "In regulated product environments, credibility comes from sequencing the right MVP.",
-      "Retention products improve when customer timing and business economics are considered together.",
-      "Cross-functional alignment is often the hardest delivery problem in lending workflows."
+      "In regulated environments, sequencing the right MVP builds credibility faster than over-engineering",
+      "Retention improves when customer timing, segmentation, and economics are aligned",
+      "Cross-functional alignment is critical in lending workflows where trust and accuracy matter"
     ],
     heroStat: ">$2B retained at renewal"
   }

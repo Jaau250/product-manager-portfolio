@@ -65,10 +65,10 @@ export function CaseStudyCard({ study }: CaseStudyCardProps) {
           <a
             href={study.liveUrl}
             target="_blank"
-            rel="noreferrer"
-            className="text-sm font-medium text-slate-300 transition hover:text-white"
+            rel="noopener noreferrer"
+            className="text-sm text-white/70 transition hover:text-white"
           >
-            Live reference
+            External reference ↗
           </a>
         ) : null}
       </div>
