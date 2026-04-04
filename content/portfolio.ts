@@ -436,7 +436,7 @@ export const technicalDepthGroups: TechnicalDepthGroup[] = [
   {
     title: "API-first product architecture",
     summary:
-      "I build products where user experience depends on clean service boundaries, reliable integrations, and scalable workflow orchestration.",
+      "I design products where user experience depends on clean service boundaries, reliable integrations, and scalable workflow orchestration.",
     badges: ["API-first architecture", "Integrations", "Platform workflows"],
     bullets: [
       "Defined system interactions across payments, verification, and document workflows",
@@ -447,23 +447,25 @@ export const technicalDepthGroups: TechnicalDepthGroup[] = [
   {
     title: "Data pipelines and cloud tooling",
     summary:
-      "I design data flows that move cleanly from source systems into reporting, analytics, and decision layers.",
+      "I define data flows that move cleanly from source systems into reporting, analytics, and decision layers.",
     badges: ["AWS S3", "AWS Glue", "AWS DataBrew", "Data pipelines"],
     bullets: [
       "Built pipelines using S3, Glue, and DataBrew-style workflows",
       "Enabled reliable data movement for analytics and product reporting",
-      "Focused on data structure, freshness, and trust as product requirements"
+      "Focused on data structure, freshness, and trust as product requirements",
+      "Prepared structured data for AI use cases, including retrieval (RAG) and grounding workflows"
     ]
   },
   {
     title: "Warehouse and analytics systems",
     summary:
-      "I work on products where decision-making depends on accessible, well-structured analytics.",
+      "I design products where decision-making depends on accessible, well-structured analytics.",
     badges: ["Snowflake", "Analytics tools", "Dashboards", "KPIs"],
     bullets: [
       "Designed dashboards and analytics tools for operators, leadership, and customers",
       "Defined KPIs and reporting layers to support self-serve visibility",
-      "Prioritized instrumentation early to enable stronger post-launch decisions"
+      "Prioritized instrumentation early to enable stronger post-launch decisions",
+      "Supported AI-driven features through clean data access, instrumentation, and feedback loops"
     ]
   }
 ];
@@ -488,6 +490,11 @@ export const technicalArchitectureLayers = [
     label: "Insight Layer",
     title: "Analytics and action",
     detail: "Dashboards, KPI tracking, self-serve analytics, and decision support for operators and leadership."
+  },
+  {
+    label: "AI Systems",
+    title: "AI Layer",
+    detail: "AI-assisted workflows, retrieval (RAG), grounding strategies, and guardrails to ensure reliable and context-aware product behavior."
   }
 ];
 

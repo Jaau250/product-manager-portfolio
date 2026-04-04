@@ -32,6 +32,10 @@ export function TechnicalDepthSection() {
               "AWS Glue",
               "AWS DataBrew",
               "Snowflake",
+              "Amazon Bedrock",
+              "RAG workflows",
+              "Prompt design",
+              "AI guardrails",
               "API-first architecture",
               "Data pipelines",
               "Analytics tools"
@@ -111,6 +115,11 @@ export function TechnicalDepthSection() {
             </article>
             ))}
           </div>
+
+          <p className="text-sm leading-6 text-mist">
+            Applied across leasing platforms, analytics systems, and AI-assisted
+            workflows in production environments.
+          </p>
         </div>
       </div>
     </section>
