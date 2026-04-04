@@ -164,50 +164,52 @@ export function CaseStudyTemplate({ study }: CaseStudyTemplateProps) {
         </CaseStudySectionCard>
       </section>
 
-      <section className="mt-16 grid gap-6 lg:grid-cols-[0.95fr_1.05fr]">
-        {study.artifact ? (
-          <div className="rounded-[28px] border border-white/10 bg-white/[0.04] p-5">
-            <img
-              src={study.artifact.src}
-              alt={study.artifact.alt}
-              className="w-full rounded-[22px] border border-white/10 object-cover"
-            />
-            <p className="mt-4 text-sm leading-6 text-mist">{study.artifact.caption}</p>
-          </div>
-        ) : (
-          <div className="rounded-[28px] border border-white/10 bg-white/[0.04] p-6">
-            <p className="text-xs font-semibold uppercase tracking-[0.24em] text-accent">
-              Artifact Placeholder
-            </p>
-            <p className="mt-4 text-sm leading-6 text-slate-200">
-              Placeholder: add a system diagram, dashboard screenshot, workflow map,
-              or another visual that helps recruiters understand the product context.
-            </p>
-          </div>
-        )}
+      {!study.hideSupplementarySection ? (
+        <section className="mt-16 grid gap-6 lg:grid-cols-[0.95fr_1.05fr]">
+          {study.artifact ? (
+            <div className="rounded-[28px] border border-white/10 bg-white/[0.04] p-5">
+              <img
+                src={study.artifact.src}
+                alt={study.artifact.alt}
+                className="w-full rounded-[22px] border border-white/10 object-cover"
+              />
+              <p className="mt-4 text-sm leading-6 text-mist">{study.artifact.caption}</p>
+            </div>
+          ) : (
+            <div className="rounded-[28px] border border-white/10 bg-white/[0.04] p-6">
+              <p className="text-xs font-semibold uppercase tracking-[0.24em] text-accent">
+                Artifact Placeholder
+              </p>
+              <p className="mt-4 text-sm leading-6 text-slate-200">
+                Placeholder: add a system diagram, dashboard screenshot, workflow map,
+                or another visual that helps recruiters understand the product context.
+              </p>
+            </div>
+          )}
 
-        <div className="rounded-[28px] border border-white/10 bg-ink/60 p-6">
-          <p className="text-xs font-semibold uppercase tracking-[0.24em] text-accent">
-            Recruiter Summary
-          </p>
-          <p className="mt-4 text-base leading-7 text-slate-200">
-            This format is designed to show product ownership, system thinking,
-            delivery tradeoffs, and measurable outcomes in a fast, recruiter-friendly
-            layout.
-          </p>
-          {study.liveUrl ? (
-            <a
-              href={study.liveUrl}
-              target="_blank"
-              rel="noreferrer"
-              className="mt-6 inline-flex items-center gap-2 text-sm font-semibold text-white transition hover:text-accent"
-            >
-              External reference
-              <span aria-hidden="true">↗</span>
-            </a>
-          ) : null}
-        </div>
-      </section>
+          <div className="rounded-[28px] border border-white/10 bg-ink/60 p-6">
+            <p className="text-xs font-semibold uppercase tracking-[0.24em] text-accent">
+              Recruiter Summary
+            </p>
+            <p className="mt-4 text-base leading-7 text-slate-200">
+              This format is designed to show product ownership, system thinking,
+              delivery tradeoffs, and measurable outcomes in a fast, recruiter-friendly
+              layout.
+            </p>
+            {study.liveUrl ? (
+              <a
+                href={study.liveUrl}
+                target="_blank"
+                rel="noreferrer"
+                className="mt-6 inline-flex items-center gap-2 text-sm font-semibold text-white transition hover:text-accent"
+              >
+                External reference
+                <span aria-hidden="true">↗</span>
+              </a>
+            ) : null}
+          </div>
+        </section>
+      ) : null}
     </main>
   );
 }

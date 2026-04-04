@@ -58,6 +58,7 @@ export type CaseStudy = {
   technicalComponents: string[];
   keyLearnings: string[];
   heroStat: string;
+  hideSupplementarySection?: boolean;
   artifact?: {
     src: string;
     alt: string;
@@ -135,7 +136,7 @@ export const caseStudies: CaseStudy[] = [
     summary:
       "Led the 0→1 build of an end-to-end leasing platform, orchestrating multiple integrations across identity verification, credit checks, banking data, payments, and e-signature into a unified product experience. Designed and scaled leasing workflows across thousands of units, enabling faster, fully digital application-to-lease conversion.",
     overview:
-      "The Online Leasing Engine was built as a flagship digital leasing experience that unified application intake, verification, payment, signing, and operational visibility into one product flow.",
+      "The Online Leasing Engine is a digital leasing platform that unified application intake, identity verification, payments, and lease signing into a single, end-to-end workflow.\n\nIt replaced fragmented, manual processes with a structured, API-driven system that improved conversion speed, reduced operational friction, and enabled full visibility across the leasing funnel.",
     company: "Property Vista",
     period: "Dec 2021 - Present",
     liveUrl: "https://www.vidabypropertyvista.com/ai-leasing-engine",
@@ -150,69 +151,70 @@ export const caseStudies: CaseStudy[] = [
       "Workflow automation"
     ],
     users: [
-      "Prospective renters completing applications online",
-      "Leasing teams managing lead-to-lease conversion",
-      "Operations leaders tracking speed, fallout, and portfolio health"
+      "Prospective renters completing applications, verification, and lease signing online",
+      "Leasing teams managing lead-to-lease workflows and applicant progression",
+      "Operations leaders tracking conversion rates, fallout, and portfolio performance"
     ],
     stakeholders: [
-      "Engineering and UX partners shaping the end-to-end product flow",
-      "Legal and compliance stakeholders reviewing document and verification requirements",
-      "Business leaders focused on conversion speed, throughput, and operational adoption"
+      "Engineering and design teams building and scaling the leasing platform",
+      "Legal and compliance stakeholders defining verification and document requirements",
+      "Business and GTM leaders focused on conversion, throughput, and operational adoption"
     ],
     constraints: [
-      "Manual leasing steps had to be digitized without breaking compliance-sensitive workflows.",
-      "Vendor integrations needed to fit a coherent experience rather than feel bolted on.",
-      "The product had to support multiple properties and operating teams, not a single workflow variant."
+      "Manual leasing workflows needed digitization without breaking compliance-sensitive processes",
+      "Vendor integrations (credit, identity, payments, e-signature) had to feel native, not bolted on",
+      "The platform needed to support multiple properties, teams, and workflows at scale"
     ],
     problem:
-      "Leasing teams were working across disconnected systems and manual handoffs, creating friction for applicants and slowing conversion from lead to signed lease.",
+      "Leasing teams operated across disconnected systems and manual handoffs, creating delays, inconsistent applicant experiences, and limited visibility into conversion performance from lead to signed lease.",
     approach: [
-      "Mapped the full lead-to-lease journey to identify the highest-friction handoffs and delays.",
-      "Sequenced delivery around the core leasing funnel first, while keeping the architecture modular.",
-      "Defined success around time-to-lease, completion, and operational throughput instead of feature count."
+      "Mapped the full lead-to-lease journey to identify high-friction steps and breakdown points",
+      "Sequenced delivery around the core leasing funnel first, while designing for modular expansion",
+      "Defined success metrics around time-to-lease, conversion rates, and operational throughput"
     ],
     solution:
-      "I led the product strategy and delivery of a modular leasing engine that unified application intake, verification, payments, document execution, and telemetry on top of AWS-backed services and vendor integrations.",
+      "Delivered a modular leasing platform that unified application intake, verification, payments, document execution, and telemetry into a single product flow.\n\nBuilt on API-first architecture with AWS-backed services and integrated third-party providers, enabling scalable workflows and consistent user experiences across properties.",
     measurableOutcomes: [
       {
         value: "85%",
         label: "Reduction in time to lease",
-        detail: "Shifted key steps from manual coordination to a guided digital journey."
+        detail: "Shifted leasing from manual coordination to a structured, fully digital workflow."
       },
       {
         value: "1,000+",
         label: "Monthly applications processed",
-        detail: "Built for sustained leasing volume rather than one-off launches."
+        detail: "Built for sustained operational volume rather than one-time launches."
       },
       {
         value: "5,000+",
         label: "Units supported",
-        detail: "Product decisions were informed by portfolio-scale operational needs."
+        detail: "Scaled across multiple properties and operational teams with consistent system behavior."
       }
     ],
     responsibilities: [
-      "Defined the product vision, roadmap, and success metrics for the digital leasing experience.",
-      "Translated legal, compliance, and operations constraints into scope, flows, and acceptance criteria.",
-      "Prioritized vendor integrations for identity verification, payments, and e-signature.",
-      "Instrumented funnel telemetry to measure completion rates, drop-off points, and SLA health."
+      "Defined product vision, roadmap, and success metrics for the end-to-end leasing platform",
+      "Translated legal, compliance, and operational requirements into structured product flows and acceptance criteria",
+      "Led prioritization and integration of third-party services for identity verification, payments, and e-signature",
+      "Instrumented funnel telemetry to track completion rates, drop-offs, and operational performance"
     ],
     technicalComponents: [
-      "API-first architecture for application orchestration and partner integrations",
-      "AWS services including S3-backed document flows and analytics-ready data storage",
-      "Event capture for funnel observability, operational reporting, and optimization",
-      "Third-party integrations for payments, identity verification, and e-signature"
+      "API-first architecture for orchestrating application flows and partner integrations",
+      "AWS-backed infrastructure for document handling, data storage, and analytics readiness",
+      "Event-based telemetry for funnel observability, reporting, and optimization",
+      "Integrated third-party services for payments, identity verification, credit checks, and e-signature"
     ],
     tradeoffs: [
-      "Balanced a smoother applicant experience against leasing compliance and operational control requirements.",
-      "Chose modular integration patterns over faster but tightly coupled implementation shortcuts.",
-      "Instrumented telemetry early because optimization depended on reliable funnel data."
+      "Balanced a smooth applicant experience with strict compliance and operational control requirements",
+      "Chose modular integration patterns over tightly coupled implementations to support long-term scalability",
+      "Invested early in telemetry to enable reliable funnel optimization and performance visibility"
     ],
     keyLearnings: [
-      "In workflow-heavy products, instrumentation is part of the product, not a later add-on.",
-      "Platform thinking matters when multiple teams rely on the same product foundation.",
-      "The biggest gains came from reducing handoffs, not adding more features."
+      "In workflow-heavy products, instrumentation is part of the product, not a post-launch addition",
+      "Platform thinking is critical when multiple teams rely on the same system foundation",
+      "The biggest performance gains came from reducing handoffs, not adding more features"
     ],
-    heroStat: "85% faster lease cycle"
+    heroStat: "85% faster lease cycle",
+    hideSupplementarySection: true
   },
   {
     slug: "vista-analytics",
