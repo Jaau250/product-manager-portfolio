@@ -31,11 +31,11 @@ export function InnovationLabSection() {
             key={project.title}
             className="group flex h-full min-w-0 flex-col rounded-[28px] border border-white/10 bg-white/[0.04] p-7 transition duration-300 hover:-translate-y-1 hover:border-accent/40 hover:bg-white/[0.06]"
           >
-            <div className="flex items-start justify-between gap-4">
-              <p className="min-w-0 text-xs font-semibold uppercase tracking-[0.28em] text-accent">
+            <div className="flex items-center justify-between gap-3">
+              <p className="min-w-0 flex-1 pr-2 text-xs font-semibold uppercase leading-5 tracking-[0.28em] text-accent">
                 {project.format}
               </p>
-              <span className="rounded-full border border-lime/30 bg-lime/10 px-3 py-1 text-[11px] font-medium text-lime">
+              <span className="shrink-0 whitespace-nowrap rounded-full border border-lime/30 bg-lime/10 px-3 py-1 text-[11px] font-medium text-lime">
                 Builder
               </span>
             </div>
