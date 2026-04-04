@@ -500,30 +500,43 @@ export const technicalArchitectureLayers = [
 
 export const sideProjects: SideProject[] = [
   {
-    title: "Job Application Tracker",
+    title: "AI Job Application Tracker",
     format: "Workflow product build",
     summary:
-      "A structured application-tracking product for managing roles, stages, notes, follow-ups, and decision momentum in one place.",
+      "A full-stack application tracking system designed to help job seekers manage applications, track progress, and stay organized across multiple opportunities.\n\nIntegrates job boards, application tracking, notes, follow-ups, and contact management into a single workflow system. AI features analyze job descriptions, extract ATS-relevant skills, and assist users in tailoring resumes for better alignment and conversion.",
     proof:
-      "Shows that I don’t just define workflow problems. I prototype them, structure the information model, and design for repeatable user behavior.",
-    tags: ["Product build", "Automation", "Workflow design", "Next.js"]
+      "Shows my ability to design and ship a complete product, combining workflow management, integrations, and AI-assisted features to solve a real user problem end-to-end.",
+    tags: [
+      "Product build",
+      "AI workflows",
+      "Integrations",
+      "Workflow system",
+      "Next.js",
+      "Automation"
+    ]
   },
   {
-    title: "AI Workflow Experiments",
-    format: "Prompt + ops lab",
+    title: "Local Chef Marketplace",
+    format: "Marketplace product build",
     summary:
-      "A set of practical experiments exploring how AI can support research synthesis, task triage, and structured decision support without overselling automation.",
+      "A marketplace platform connecting local food vendors with nearby customers, enabling discovery, ordering, and delivery of home-cooked meals.\n\nDesigned as an end-to-end e-commerce system with vendor listings, product catalogs, payments, and order fulfillment workflows tailored for small-scale food businesses.",
     proof:
-      "Demonstrates an applied AI product lens: clear guardrails, human review, and workflow value tied to real execution rather than novelty.",
-    tags: ["AI", "Prompt design", "Evaluation", "Automation"]
+      "Demonstrates my ability to design marketplace systems, handle supply-demand interactions, and structure end-to-end product flows from listing to transaction and fulfillment.",
+    tags: [
+      "Marketplace",
+      "E-commerce",
+      "Payments",
+      "Local discovery",
+      "Vendor platform"
+    ]
   },
   {
     title: "Builder Sandbox",
     format: "API + systems prototypes",
     summary:
-      "Small prototypes around API flows, data handoffs, instrumentation, and system behavior inspired by platform-scale product work.",
+      "Small prototypes exploring API flows, data pipelines, telemetry, and system behavior — used to test ideas quickly and validate product patterns before scaling.",
     proof:
-      "Reinforces that I can move from product thinking into lightweight execution when I want to test an idea, workflow, or technical pattern.",
+      "Reinforces an execution mindset — the ability to quickly move from idea to working prototype to validate workflows, integrations, and system design decisions.",
     tags: ["APIs", "Data pipelines", "Telemetry", "Builder mindset"]
   }
 ];

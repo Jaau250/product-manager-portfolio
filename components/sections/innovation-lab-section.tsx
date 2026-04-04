@@ -7,18 +7,20 @@ export function InnovationLabSection() {
       <div className="grid gap-12 lg:grid-cols-[0.82fr_1.18fr]">
         <div>
           <SectionHeading
-            eyebrow="Innovation Lab"
-            title="Builder-style projects that show execution, not just product management"
-            description="I use side projects to test ideas, prototype workflows, and stay close to the mechanics of building. The goal is simple: show that I can turn product thinking into working artifacts."
+            eyebrow="Product Builds & Execution"
+            title="Product Builds & Execution"
+            description="Side projects where I design, build, and ship real products — from workflows and integrations to AI-assisted features and user-facing systems."
           />
 
           <div className="mt-8 rounded-[28px] border border-accent/20 bg-accent/10 p-6">
             <p className="text-xs font-semibold uppercase tracking-[0.22em] text-accent">
-              What this section signals
+              What this section shows
             </p>
             <p className="mt-4 text-sm leading-6 text-slate-100">
-              Technical curiosity, execution bias, and a habit of exploring AI,
-              APIs, automation, and workflow design through lightweight product builds.
+              Execution, not just strategy. These projects reflect how I
+              translate product thinking into working systems, test ideas in
+              real environments, and stay close to how products are actually
+              built.
             </p>
           </div>
         </div>
