@@ -4,6 +4,12 @@ export type Metric = {
   detail: string;
 };
 
+export type ProofPoint = {
+  value: string;
+  label: string;
+  detail: string;
+};
+
 export type TechnicalCapability = {
   title: string;
   description: string;
@@ -93,6 +99,33 @@ export const heroHighlights = [
     title: "Fit",
     body: "Best aligned to Product Manager, Technical PM, and AI/Data Platform roles."
   }
+];
+
+export const heroProofPoints: ProofPoint[] = [
+  {
+    value: "85%",
+    label: "faster lease cycle",
+    detail: "Turned fragmented leasing into a structured digital funnel."
+  },
+  {
+    value: "Hours → Minutes",
+    label: "reporting turnaround",
+    detail: "Shifted analytics from manual pulls to decision-ready dashboards."
+  },
+  {
+    value: ">$2B",
+    label: "balances retained",
+    detail: "Supported earlier renewal intervention across lending workflows."
+  }
+];
+
+export const trustSignals = [
+  "Property Vista",
+  "TD Canada Trust",
+  "Leasing platforms",
+  "Analytics systems",
+  "AI-assisted workflows",
+  "Lending products"
 ];
 
 export const operatingLens = [

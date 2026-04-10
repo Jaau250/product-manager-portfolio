@@ -1,5 +1,10 @@
 import HeroImage from "@/components/hero-image";
-import { heroHighlights, operatingLens, siteConfig } from "@/content/portfolio";
+import {
+  heroHighlights,
+  heroProofPoints,
+  operatingLens,
+  siteConfig
+} from "@/content/portfolio";
 
 export function HeroSection() {
   return (
@@ -32,6 +37,21 @@ export function HeroSection() {
           >
             Let&apos;s Talk
           </a>
+        </div>
+
+        <div className="mt-8 grid gap-3 sm:grid-cols-3">
+          {heroProofPoints.map((item) => (
+            <div
+              key={item.label}
+              className="rounded-3xl border border-white/10 bg-white/[0.04] p-5"
+            >
+              <p className="text-2xl font-semibold tracking-tight text-white">{item.value}</p>
+              <p className="mt-2 text-xs font-semibold uppercase tracking-[0.2em] text-accent">
+                {item.label}
+              </p>
+              <p className="mt-3 text-sm leading-6 text-slate-200">{item.detail}</p>
+            </div>
+          ))}
         </div>
 
         <div className="mt-10 grid gap-4 sm:grid-cols-3">
