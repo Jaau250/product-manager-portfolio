@@ -57,12 +57,12 @@ export function ContactForm() {
       onSubmit={handleSubmit}
       className="rounded-[28px] border border-white/10 bg-ink/70 p-7"
     >
-      <p className="hidden">
+      <div className="hidden invisible">
         <label>
           Don&apos;t fill this out if you&apos;re human:
           <input name="bot-field" />
         </label>
-      </p>
+      </div>
 
       <div className="space-y-5">
         <div className="grid gap-5 sm:grid-cols-2">

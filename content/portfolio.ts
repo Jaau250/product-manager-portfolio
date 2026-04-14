@@ -150,15 +150,18 @@ export const trustSignals = [
 export const operatingLens = [
   {
     title: "Workflow layer",
-    body: "Design customer and internal workflows that reduce friction and improve execution."
+    body:
+      "Orchestrated end-to-end leasing flows across Plaid, ID verification, credit checks, and e-signature into a single digital funnel."
   },
   {
     title: "System layer",
-    body: "Define APIs, integrations, and product boundaries that support scale."
+    body:
+      "Defined API contracts across Propexo, Payroc, Plaid, and insurance integrations to build a reliable, extensible leasing platform."
   },
   {
     title: "Data layer",
-    body: "Build the data foundation needed for reporting, decision-making, and AI-driven features."
+    body:
+      "Piped leasing and AI signals into self-serve dashboards, cutting reporting turnaround from hours to minutes."
   }
 ];
 
