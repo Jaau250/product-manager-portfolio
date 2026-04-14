@@ -36,10 +36,12 @@ export type SideProject = {
 export type ExperienceItem = {
   role: string;
   company: string;
-  location: string;
+  location?: string;
   period: string;
   summary: string;
   highlights: string[];
+  sectionLabel?: string;
+  tier?: "primary" | "earlier";
 };
 
 export type CaseStudy = {
@@ -592,5 +594,34 @@ export const experience: ExperienceItem[] = [
       "Collaborated with data, pricing, compliance, and delivery teams to define MVP scope, prioritize requirements, and support execution in a regulated environment.",
       "Introduced product structure to complex financial workflows where timing, trust, and operational accuracy were critical."
     ]
+  },
+  {
+    role: "Business Analyst",
+    company: "Actv8 Marketing",
+    period: "Jan 2018 – May 2019",
+    summary:
+      "Worked on data-driven marketing initiatives, translating business goals into measurable campaigns and system improvements.",
+    highlights: [
+      "Drove marketing initiatives that contributed to a 15% increase in revenue.",
+      "Built metrics frameworks to surface inefficiencies and improve system performance.",
+      "Translated business goals into structured requirements and execution plans.",
+      "Delivered end-to-end solutions across CRM workflows and marketing systems."
+    ],
+    sectionLabel: "Early Career: Data & Business Analysis Foundations",
+    tier: "earlier"
+  },
+  {
+    role: "Business Analyst / Data Analyst",
+    company: "Citi Bank",
+    period: "Aug 2013 – Sep 2017",
+    summary:
+      "Supported financial systems and decision-making through data analysis, reporting, and process optimization.",
+    highlights: [
+      "Improved financial operations efficiency by 10% by identifying transaction bottlenecks and optimizing processing workflows.",
+      "Enhanced transaction monitoring to detect anomalies and strengthen risk controls.",
+      "Delivered executive-level insights from large-scale transaction data.",
+      "Partnered with stakeholders to translate business needs into scalable system solutions."
+    ],
+    tier: "earlier"
   }
 ];
