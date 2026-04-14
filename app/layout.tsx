@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { Analytics } from "@vercel/analytics/next";
 
 import "./globals.css";
 
@@ -46,6 +47,7 @@ export default function RootLayout({
       <body suppressHydrationWarning className="bg-ink font-sans text-white antialiased">
         <PortfolioAnalytics />
         {children}
+        <Analytics />
       </body>
     </html>
   );
