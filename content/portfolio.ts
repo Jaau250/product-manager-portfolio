@@ -598,6 +598,7 @@ export const experience: ExperienceItem[] = [
   {
     role: "Business Analyst",
     company: "Actv8 Marketing",
+    location: "Windsor, ON",
     period: "Jan 2018 – May 2019",
     summary:
       "Worked on data-driven marketing initiatives, translating business goals into measurable campaigns and system improvements.",
@@ -613,6 +614,7 @@ export const experience: ExperienceItem[] = [
   {
     role: "Business Analyst / Data Analyst",
     company: "Citi Bank",
+    location: "Lagos, Nigeria",
     period: "Aug 2013 – Sep 2017",
     summary:
       "Supported financial systems and decision-making through data analysis, reporting, and process optimization.",
