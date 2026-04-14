@@ -54,16 +54,24 @@ export function HeroSection() {
           ))}
         </div>
 
-        <div className="mt-10 grid gap-4 sm:grid-cols-3">
+        <div className="mt-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
           {heroHighlights.map((item) => (
             <div
               key={item.title}
-              className="rounded-3xl border border-white/10 bg-white/[0.04] p-5"
+              className="h-full rounded-3xl border border-white/10 bg-white/[0.04] p-5"
             >
               <p className="text-xs font-semibold uppercase tracking-[0.28em] text-accent">
                 {item.title}
               </p>
-              <p className="mt-3 text-sm leading-6 text-slate-200">{item.body}</p>
+              {item.lines ? (
+                <div className="mt-3 space-y-1 text-sm leading-5 text-slate-200">
+                  {item.lines.map((line) => (
+                    <p key={line}>{line}</p>
+                  ))}
+                </div>
+              ) : (
+                <p className="mt-3 text-sm leading-6 text-slate-200">{item.body}</p>
+              )}
             </div>
           ))}
         </div>

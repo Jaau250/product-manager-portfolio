@@ -10,6 +10,12 @@ export type ProofPoint = {
   detail: string;
 };
 
+export type HeroHighlight = {
+  title: string;
+  body?: string;
+  lines?: string[];
+};
+
 export type TechnicalCapability = {
   title: string;
   description: string;
@@ -88,18 +94,29 @@ export const siteConfig = {
   linkedin: "https://linkedin.com/in/jamesumole"
 };
 
-export const heroHighlights = [
+export const heroHighlights: HeroHighlight[] = [
   {
     title: "Focus",
-    body: "AI and data products tied to real operational outcomes."
+    body:
+      "AI, data, and platform products that drive measurable outcomes across financial and operational workflows."
   },
   {
     title: "Strength",
-    body: "Strong systems thinking across APIs, integrations, analytics, and workflow design."
+    body:
+      "Systems thinking across APIs, integrations, and data workflows, bridging business needs with scalable solutions."
   },
   {
     title: "Fit",
-    body: "Best aligned to Product Manager, Technical PM, and AI/Data Platform roles."
+    body:
+      "Product Manager, Technical PM, and AI/Data Platform roles in FinTech and SaaS environments."
+  },
+  {
+    title: "Verticals",
+    lines: [
+      "FinTech & Lending",
+      "SaaS & Platform Products",
+      "PropTech & Marketplaces"
+    ]
   }
 ];
 
