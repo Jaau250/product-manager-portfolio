@@ -4,28 +4,13 @@ import { sideProjects } from "@/content/portfolio";
 export function InnovationLabSection() {
   return (
     <section id="innovation-lab" className="section-shell">
-      <div className="grid gap-12 lg:grid-cols-[0.82fr_1.18fr]">
-        <div>
-          <SectionHeading
-            eyebrow="Product Builds & Execution"
-            title="Product Builds & Execution"
-            description="Side projects where I design, build, and ship real products — from workflows and integrations to AI-assisted features and user-facing systems."
-          />
+      <SectionHeading
+        eyebrow="Product Builds & Execution"
+        title="Product Builds & Execution"
+        description="Side projects where I design, build, and ship real products — from workflows and integrations to AI-assisted features and user-facing systems."
+      />
 
-          <div className="mt-8 rounded-[28px] border border-accent/20 bg-accent/10 p-6">
-            <p className="text-xs font-semibold uppercase tracking-[0.22em] text-accent">
-              What this section shows
-            </p>
-            <p className="mt-4 text-sm leading-6 text-slate-100">
-              Execution, not just strategy. These projects reflect how I
-              translate product thinking into working systems, test ideas in
-              real environments, and stay close to how products are actually
-              built.
-            </p>
-          </div>
-        </div>
-
-        <div className="grid auto-rows-fr gap-6 lg:grid-cols-3">
+      <div className="mt-12 grid auto-rows-fr gap-6 lg:grid-cols-2">
         {sideProjects.map((project) => (
           <article
             key={project.title}
@@ -55,43 +40,25 @@ export function InnovationLabSection() {
               ))}
             </div>
 
-            <div className="mt-auto rounded-3xl border border-white/10 bg-ink/60 p-5">
-              <p className="text-xs font-semibold uppercase tracking-[0.22em] text-slate-300">
-                What it proves
-              </p>
-              <p className="mt-3 min-w-0 max-w-full break-normal text-sm leading-6 text-slate-200">
-                {project.proof}
-              </p>
-            </div>
-
-            <div className="mt-6 flex items-center justify-between gap-4">
-              <p className="text-sm text-mist">Built to explore product execution.</p>
-              <div className="flex items-center gap-4">
-                {project.liveUrl ? (
-                  <a
-                    href={project.liveUrl}
-                    target="_blank"
-                    rel="noreferrer"
-                    className="text-sm font-semibold text-slate-200 transition hover:text-white"
-                  >
-                    Live Demo
-                  </a>
-                ) : null}
-                {project.githubUrl ? (
-                  <a
-                    href={project.githubUrl}
-                    target="_blank"
-                    rel="noreferrer"
-                    className="text-sm font-semibold text-slate-200 transition hover:text-white"
-                  >
-                    GitHub
-                  </a>
+            {project.liveUrl ? (
+              <div className="mt-auto pt-6">
+                <a
+                  href={project.liveUrl}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="inline-flex items-center justify-center rounded-full border border-white/15 bg-white/[0.06] px-5 py-3 text-sm font-semibold text-white transition hover:border-accent/40 hover:bg-white/[0.1]"
+                >
+                  View Live
+                </a>
+                {project.liveNote ? (
+                  <p className="mt-3 text-sm leading-6 text-mist">
+                    {project.liveNote}
+                  </p>
                 ) : null}
               </div>
-            </div>
+            ) : null}
           </article>
         ))}
-        </div>
       </div>
     </section>
   );

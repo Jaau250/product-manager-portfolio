@@ -33,10 +33,10 @@ export type SideProject = {
   title: string;
   format: string;
   summary: string;
-  proof: string;
   tags: string[];
   liveUrl?: string;
   githubUrl?: string;
+  liveNote?: string;
 };
 
 export type ExperienceItem = {
@@ -548,8 +548,8 @@ export const sideProjects: SideProject[] = [
     format: "Workflow product build",
     summary:
       "A full-stack application tracking system helping job seekers manage applications, track progress, and stay organized across opportunities.\n\nIntegrates job boards, tracking, notes, follow-ups, and contacts into a single workflow. AI features analyze job descriptions and assist with ATS-aligned resume updates.",
-    proof:
-      "Shows my ability to design and ship a complete product, combining workflow management, integrations, and AI-assisted features to solve a real user problem end-to-end.",
+    liveUrl: "https://job-tracker-mvp-rho.vercel.app/",
+    liveNote: "Actively iterating — new features added regularly",
     tags: [
       "Product build",
       "AI workflows",
@@ -564,8 +564,8 @@ export const sideProjects: SideProject[] = [
     format: "Marketplace product build",
     summary:
       "A marketplace platform connecting local food vendors with nearby customers, enabling discovery, ordering, and delivery of home-cooked meals.\n\nDesigned as an end-to-end e-commerce system with vendor listings, product catalogs, payments, and order fulfillment workflows tailored for small-scale food businesses.",
-    proof:
-      "Demonstrates my ability to design marketplace systems, handle supply-demand interactions, and structure end-to-end product flows from listing to transaction and fulfillment.",
+    liveUrl: "https://localchef.vercel.app/",
+    liveNote: "Work in progress — core marketplace flows in development",
     tags: [
       "Marketplace",
       "E-commerce",
@@ -573,15 +573,6 @@ export const sideProjects: SideProject[] = [
       "Local discovery",
       "Vendor platform"
     ]
-  },
-  {
-    title: "Builder Sandbox",
-    format: "API + systems prototypes",
-    summary:
-      "Small prototypes exploring API flows, data pipelines, telemetry, and system behavior — used to test ideas quickly and validate product patterns before scaling.",
-    proof:
-      "Reinforces an execution mindset — the ability to quickly move from idea to working prototype to validate workflows, integrations, and system design decisions.",
-    tags: ["APIs", "Data pipelines", "Telemetry", "Builder mindset"]
   }
 ];
 
