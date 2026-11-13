@@ -84,11 +84,11 @@ const siteUrl = process.env.NEXT_PUBLIC_SITE_URL?.replace(/\/$/, "") ?? "http://
 
 export const siteConfig = {
   name: "James Umole",
-  title: "Product Manager | AI, Data & Platform Products",
+  title: "Product Manager | AI, FinTech & Platform Products",
   description:
-    "Product manager with technical depth across AI-enabled workflows, data systems, APIs, and platform-scale operating models.",
+    "Product manager focused on digital financial services, AI-enabled workflows, and scalable platform products.",
   heroIntro:
-    "I lead products from idea to launch, translating business problems into user workflows, system requirements, and measurable outcomes. My background spans AI-enabled products, data platforms, and operational workflows.",
+    "I lead product discovery, strategy, and delivery across financial services and enterprise SaaS. I connect customer research, business needs, and technical collaboration to shape scalable digital experiences and measurable outcomes.",
   url: siteUrl,
   email: "mailto:umolejames@gmail.com",
   linkedin: "https://linkedin.com/in/jamesumole"
@@ -98,12 +98,12 @@ export const heroHighlights: HeroHighlight[] = [
   {
     title: "Focus",
     body:
-      "AI, data, and platform products that drive measurable outcomes across financial and operational workflows."
+      "AI-enabled experiences, financial services, and platform products built around customer and business needs."
   },
   {
     title: "Strength",
     body:
-      "Systems thinking across APIs, integrations, and data workflows, bridging business needs with scalable solutions."
+      "Product strategy grounded in market research, systems thinking, and cross-functional execution."
   },
   {
     title: "Fit",
@@ -139,6 +139,7 @@ export const heroProofPoints: ProofPoint[] = [
 ];
 
 export const trustSignals = [
+  "Symcor",
   "Property Vista",
   "TD Canada Trust",
   "Leasing platforms",
@@ -193,7 +194,7 @@ export const caseStudies: CaseStudy[] = [
     overview:
       "The Online Leasing Engine is a digital leasing platform that unified application intake, identity verification, payments, and lease signing into a single, end-to-end workflow.\n\nIt replaced fragmented, manual processes with a structured, API-driven system that improved conversion speed, reduced operational friction, and enabled full visibility across the leasing funnel.",
     company: "Property Vista",
-    period: "Dec 2021 - Present",
+    period: "Dec 2021 - May 2026",
     liveUrl: "https://www.vidabypropertyvista.com/ai-leasing-engine",
     tags: [
       "0→1 delivery",
@@ -280,7 +281,7 @@ export const caseStudies: CaseStudy[] = [
     overview:
       "Vista Analytics transformed reporting into a product capability by turning fragmented operational data into reusable pipelines, governed data models, and self-serve analytics surfaces.\n\nThe platform unified leasing, maintenance requests, purchase orders, insurance data, tenant demographics, and AI-driven leasing signals into a single analytics layer.\n\nIt enabled internal teams and external customers to access consistent, decision-ready insights through embedded dashboards, Power BI integrations, and self-serve analytics tooling.",
     company: "Property Vista",
-    period: "Dec 2021 - Present",
+    period: "Dec 2021 - May 2026",
     liveUrl: "https://www.vidabypropertyvista.com/vida-analytics",
     tags: ["Analytics", "Data pipelines", "RBAC", "Customer analytics", "AI instrumentation"],
     users: [
@@ -582,9 +583,23 @@ export const sideProjects: SideProject[] = [
 export const experience: ExperienceItem[] = [
   {
     role: "Product Manager",
+    company: "Symcor",
+    location: "Mississauga, ON",
+    period: "May 2026 – Present",
+    summary:
+      "Lead product strategy and discovery for digital financial services and AI-enabled document workflows, translating complex customer needs into clear priorities and practical product opportunities.",
+    highlights: [
+      "Conduct market and customer research, opportunity sizing, and business-case analysis to guide product direction and prioritization.",
+      "Define user journeys, product requirements, and MVP scope for financial services and document-intensive workflows.",
+      "Collaborate with engineering, architecture, and commercial teams to assess integration options, align stakeholders, and advance product initiatives.",
+      "Explore responsible AI-assisted experiences that improve document understanding, workflow efficiency, and human-led decision support."
+    ]
+  },
+  {
+    role: "Product Manager",
     company: "Property Vista",
     location: "Toronto, ON",
-    period: "Dec 2021 – Present",
+    period: "Dec 2021 – May 2026",
     summary:
       "Owned product strategy and delivery for leasing and analytics platforms used by property management teams, with a focus on scalable workflows, measurable outcomes, and platform-ready systems across thousands of units.",
     highlights: [
