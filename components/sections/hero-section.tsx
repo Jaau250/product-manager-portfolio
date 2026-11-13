@@ -11,7 +11,7 @@ export function HeroSection() {
     <section className="section-shell grid gap-12 pt-10 sm:pt-12 lg:grid-cols-[1.1fr_0.9fr] lg:items-start lg:gap-14 lg:pt-14">
       <div className="max-w-[44rem] lg:pt-2">
         <p className="text-sm font-semibold uppercase tracking-[0.32em] text-accent">
-          PRODUCT MANAGER | AI, DATA & PLATFORM PRODUCTS
+          PRODUCT MANAGER | AI, FINTECH & PLATFORM PRODUCTS
         </p>
         <h1 className="mt-4 text-5xl font-semibold tracking-tight text-white sm:text-6xl lg:text-7xl lg:leading-[0.94]">
           {siteConfig.title}
